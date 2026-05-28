@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigiRocket - Sua Máquina de Vendas Pronta em 48h</title>
+  <meta name="description"
+    content="Apareça no Google e receba pedidos no WhatsApp em 48h. A estrutura definitiva de vendas para negócios locais." />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DigiRocket - Sua Máquina de Vendas" />
+  <meta property="og:description"
+    content="Tenha um site de alta performance pronto em 48h. A revolução digital do seu negócio começa aqui." />
+  <meta property="og:image" content="/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              green: '#a3e635',
+              blue: '#3b82f6',
+              dark: '#020617',
+              card: '#0f172a',
+            }
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'fade-in-down': 'fadeInDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'blur-reveal': 'blurReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+            'float': 'float 4s ease-in-out infinite',
+            'scroll': 'scroll 40s linear infinite',
+            'neon-pulse': 'neon-pulse 3s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeInDown: {
+              '0%': { opacity: '0', transform: 'translateY(-30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            blurReveal: {
+              '0%': { opacity: '0', filter: 'blur(20px)', transform: 'scale(0.95)' },
+              '100%': { opacity: '1', filter: 'blur(0)', transform: 'scale(1)' },
+            },
+            pulseGlow: {
+              '0%, 100%': { opacity: '0.4', filter: 'blur(30px)' },
+              '50%': { opacity: '0.8', filter: 'blur(45px)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-15px)' },
+            },
+            scroll: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' }
+            },
+            shimmer: {
+              '0%': { transform: 'translateX(-100%)' },
+              '100%': { transform: 'translateX(100%)' }
+            },
+            'neon-pulse': {
+              '0%, 100%': { opacity: '0.3', filter: 'blur(8px)' },
+              '50%': { opacity: '0.6', filter: 'blur(12px)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* CUSTOM TECH SCROLLBAR */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #020617;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #a3e635;
+      border: 3px solid #020617;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #bef264;
+    }
+
+    .mask-gradient-x {
+      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+
+    /* PRELOADER STYLES */
+    #preloader {
+      position: fixed;
+      inset: 0;
+      background: #020617;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .preloader-line {
+      width: 150px;
+      height: 2px;
+      background: #1e293b;
+      position: relative;
+      margin-top: 20px;
+      overflow: hidden;
+    }
+
+    .preloader-line::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 40%;
+      background: #a3e635;
+      animation: preloader-move 1.5s infinite ease-in-out;
+      box-shadow: 0 0 10px #a3e635;
+    }
+
+    @keyframes preloader-move {
+      0% {
+        left: -40%;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-[#020617] text-white antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
