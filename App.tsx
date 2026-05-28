@@ -5,8 +5,11 @@ import { Rocket, CheckCircle2, LayoutDashboard } from 'lucide-react';
 import { FloatingCTA } from './components/FloatingCTA';
 
 const Hero = React.lazy(() => import('./components/Hero').then(m => ({ default: m.Hero })));
+const TrustedBy = React.lazy(() => import('./components/TrustedBy').then(m => ({ default: m.TrustedBy })));
 const Comparison = React.lazy(() => import('./components/Comparison').then(m => ({ default: m.Comparison })));
+const Team = React.lazy(() => import('./components/Team').then(m => ({ default: m.Team })));
 const HowItWorks = React.lazy(() => import('./components/HowItWorks').then(m => ({ default: m.HowItWorks })));
+const Capabilities = React.lazy(() => import('./components/Capabilities').then(m => ({ default: m.Capabilities })));
 const Results = React.lazy(() => import('./components/Results').then(m => ({ default: m.Results })));
 const NicheDemo = React.lazy(() => import('./components/NicheDemo').then(m => ({ default: m.NicheDemo })));
 const Pricing = React.lazy(() => import('./components/Pricing').then(m => ({ default: m.Pricing })));
@@ -98,6 +101,9 @@ const App: React.FC = () => {
           <div className="preloader-line w-[200px] h-[3px] bg-white/5 rounded-full overflow-hidden">
             <div className="h-full bg-brand-green animate-shimmer w-1/3 shadow-[0_0_15px_#a3e635]"></div>
           </div>
+          <p className="mt-6 text-brand-green font-black text-[10px] md:text-xs uppercase tracking-[0.5em] animate-pulse">
+            Carregando oportunidade
+          </p>
         </div>
       </div>
 
@@ -109,16 +115,25 @@ const App: React.FC = () => {
             <Hero />
             <FloatingCTA />
 
-            {/* 2. COMPARISON (WHITE) */}
+            {/* 2. TRUSTED BY (DARK) */}
+            <TrustedBy />
+
+            {/* 3. COMPARISON (WHITE) */}
             <Comparison />
 
-            {/* 3. HOW IT WORKS (DARK) */}
+            {/* 4. TEAM (WHITE) */}
+            <Team />
+
+            {/* 5. HOW IT WORKS (DARK) */}
             <HowItWorks />
 
-            {/* 4. RESULTS (WHITE) */}
+            {/* 6. CAPABILITIES (DARK) */}
+            <Capabilities />
+
+            {/* 7. RESULTS (WHITE) */}
             <Results />
 
-            {/* 5. NICHE DEMO (DARK) */}
+            {/* 8. NICHE DEMO (DARK) */}
             <NicheDemo />
 
             {/* 6. PRICING (WHITE) */}

@@ -35,13 +35,13 @@ export const Header: React.FC = () => {
           </div>
 
           <span className="text-brand-green">
-            ÚLTIMAS 4 VAGAS DISPONÍVEIS
+            ATENDIMENTO HUMANIZADO
           </span>
           <span className="text-white opacity-40">
-            -
+            ·
           </span>
           <span className="text-white">
-            CONDIÇÕES ESPECIAIS DE CARNAVAL
+            ENTREGA EM 48H · #1 NO GOOGLE
           </span>
         </div>
       </div>
@@ -58,11 +58,12 @@ export const Header: React.FC = () => {
             </div>
 
             {/* Desktop Menu */}
-            <nav className="hidden lg:flex space-x-12 items-center">
+            <nav className="hidden lg:flex space-x-10 items-center">
               {[
                 { label: 'Como Funciona', href: '#como-funciona' },
+                { label: 'Equipe', href: '#equipe' },
+                { label: 'Serviços', href: '#servicos' },
                 { label: 'Nichos', href: '#nichos' },
-                { label: 'Resultados', href: '#resultados' },
                 { label: 'Planos', href: '#planos' },
                 { label: 'FAQ', href: '#faq' },
               ].map((item) => (
@@ -102,8 +103,9 @@ export const Header: React.FC = () => {
             <div className="px-6 py-8 space-y-4">
               {[
                 { label: 'Como Funciona', href: '#como-funciona' },
+                { label: 'Equipe', href: '#equipe' },
+                { label: 'Serviços', href: '#servicos' },
                 { label: 'Nichos', href: '#nichos' },
-                { label: 'Resultados', href: '#resultados' },
                 { label: 'Planos', href: '#planos' },
                 { label: 'FAQ', href: '#faq' },
               ].map((item) => (

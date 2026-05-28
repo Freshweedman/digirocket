@@ -24,10 +24,53 @@ body {
   color: var(--brand-dark);
 }
 
-/* ===== GLOBAL BACKGROUND — MODERN ARCHITECTURAL PARTICLES ===== */
-/* Applied to the root app wrapper or sections */
+/* ===== CUSTOM TECH SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-/* Dark sections: Premium Technical Grid with Glowing Intersections - BOOSTED VISIBILITY */
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a3e635;
+  border: 3px solid #020617;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bef264;
+}
+
+/* ===== PRELOADER ===== */
+.preloader-line {
+  width: 150px;
+  height: 2px;
+  background: #1e293b;
+  position: relative;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.preloader-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background: #a3e635;
+  animation: preloader-move 1.5s infinite ease-in-out;
+  box-shadow: 0 0 10px #a3e635;
+}
+
+@keyframes preloader-move {
+  0% { left: -40%; }
+  100% { left: 100%; }
+}
+
+/* ===== GLOBAL BACKGROUND TEXTURE ===== */
 section {
   background-color: var(--brand-dark);
   background-image:
@@ -37,10 +80,8 @@ section {
   background-size: 44px 44px, 44px 44px, 44px 44px;
   position: relative;
   contain: paint;
-  /* Performance optimization: isolate painting */
 }
 
-/* Light sections: Ultra-clean Dot Matrix - BOOSTED VISIBILITY */
 section.bg-white,
 section.bg-slate-50 {
   background-color: #ffffff;
@@ -49,7 +90,6 @@ section.bg-slate-50 {
   background-size: 32px 32px;
 }
 
-/* Add a subtle highlight layer to dark sections for "Modern/Beautiful" feel */
 section::before {
   content: '';
   position: absolute;
@@ -58,56 +98,31 @@ section::before {
   pointer-events: none;
   z-index: 1;
   will-change: background;
-  /* Optimization for mouse-tracking */
 }
 
-/* ===== NEON SWEEP ANIMATION (for banner) - SLOWER & MORE PRONOUNCED ===== */
+/* ===== NEON SWEEP ANIMATION ===== */
 @keyframes neon-sweep {
-  0% {
-    transform: translateX(-150%);
-    opacity: 0;
-  }
-
-  15% {
-    opacity: 0.1;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  85% {
-    opacity: 0.1;
-  }
-
-  100% {
-    transform: translateX(250%);
-    opacity: 0;
-  }
+  0% { transform: translateX(-150%); opacity: 0; }
+  15% { opacity: 0.1; }
+  50% { opacity: 1; }
+  85% { opacity: 0.1; }
+  100% { transform: translateX(250%); opacity: 0; }
 }
 
 .animate-neon-sweep {
   animation: neon-sweep 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-/* ===== NEON PULSE (for header) ===== */
 @keyframes neon-pulse {
-
-  0%,
-  100% {
-    opacity: 0.1;
-  }
-
-  50% {
-    opacity: 0.4;
-  }
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.4; }
 }
 
 .animate-neon-pulse {
   animation: neon-pulse 4s ease-in-out infinite;
 }
 
-/* ===== TERMINAL STYLE CMD ===== */
+/* ===== TERMINAL CARD ===== */
 .terminal-card {
   background: #0b0f1a;
   backdrop-filter: blur(24px);
@@ -137,40 +152,18 @@ section::before {
   gap: 8px;
 }
 
-.terminal-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: full;
-}
-
 .neon-glow-green {
   box-shadow: 0 0 15px rgba(163, 230, 53, 0.5), 0 0 30px rgba(163, 230, 53, 0.2);
 }
 
 /* ===== SHIMMER ===== */
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
-}
-
 .animate-shimmer {
   animation: shimmer 2s infinite linear;
 }
 
-/* ===== SCROLLBAR ===== */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+/* ===== HIDDEN SCROLLBAR ===== */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
 /* ===== GLASSMORPHISM ===== */
 .glass {
@@ -187,7 +180,7 @@ section::before {
   border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-/* ===== NEON CARD — reusable ===== */
+/* ===== NEON CARD ===== */
 .neon-card {
   position: relative;
   background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(2, 6, 23, 0.95) 100%);
@@ -231,13 +224,8 @@ section::before {
 }
 
 /* ===== SCROLL SNAP ===== */
-.snap-x-mandatory {
-  scroll-snap-type: x mandatory;
-}
-
-.snap-center {
-  scroll-snap-align: center;
-}
+.snap-x-mandatory { scroll-snap-type: x mandatory; }
+.snap-center { scroll-snap-align: center; }
 
 /* ===== SCROLL INDICATOR ===== */
 #scroll-indicator {
@@ -253,17 +241,9 @@ section::before {
 
 /* ===== GRADIENT ANIMATION ===== */
 @keyframes gradient-x {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .animate-gradient-x {
@@ -271,7 +251,7 @@ section::before {
   animation: gradient-x 3s ease infinite;
 }
 
-/* ===== MASK GRADIENT (for testimonial carousel) ===== */
+/* ===== MASK GRADIENT ===== */
 .mask-gradient-x {
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
   mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
@@ -282,7 +262,6 @@ section::before {
   opacity: 0;
   transform: translateY(32px);
   will-change: transform, opacity;
-  /* Browser optimization for upcoming animation */
   transition:
     opacity 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94),
     transform 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -293,39 +272,30 @@ section::before {
   transform: translateY(0);
 }
 
-.delay-100 {
-  transition-delay: 100ms;
-}
-
-.delay-200 {
-  transition-delay: 200ms;
-}
-
-.delay-300 {
-  transition-delay: 300ms;
-}
-
-.delay-400 {
-  transition-delay: 400ms;
-}
-
-.delay-500 {
-  transition-delay: 500ms;
-}
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
 
 /* ===== FADE IN UP ===== */
 @keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fade-in-up {
   animation: fade-in-up 0.6s ease-out forwards;
+}
+
+/* ===== REDUCE MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

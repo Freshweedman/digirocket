@@ -15,7 +15,6 @@ interface PhoneFrameProps {
 
 export const PhoneFrame: React.FC<PhoneFrameProps> = ({ niche }) => {
   const renderApp = () => {
-    // Specialized layouts per niche
     if (niche.id === 'sushi') return <SushiApp config={niche.appConfig} />;
     if (niche.id === 'doceria' || niche.id === 'padaria') return <DoceriaApp config={niche.appConfig} />;
     if (niche.id === 'moda') return <FashionApp config={niche.appConfig} />;
@@ -31,34 +30,34 @@ export const PhoneFrame: React.FC<PhoneFrameProps> = ({ niche }) => {
   };
 
   return (
-    <div className="relative mx-auto border-gray-900 bg-gray-900 border-[6px] rounded-[2.5rem] h-[580px] w-[285px] shadow-2xl overflow-hidden ring-1 ring-white/10">
-      {/* Dynamic Island / Notch (iPhone 16 Style) */}
-      <div className="absolute top-2 left-1/2 transform -translate-x-1/2 h-[24px] w-[80px] bg-black rounded-full z-20 flex justify-center items-center shadow-sm">
-        <div className="w-1.5 h-1.5 bg-[#1a1a1a] rounded-full mr-1"></div>
-        <div className="w-1.5 h-1.5 bg-[#0f0f0f] rounded-full ml-12 opacity-50"></div>
+    <div className="relative mx-auto border-gray-900 bg-gray-900 border-[6px] rounded-[2.5rem] aspect-[9/19] w-full max-w-[320px] shadow-2xl overflow-hidden ring-1 ring-white/10">
+      {/* Dynamic Island */}
+      <div className="absolute top-2 left-1/2 -translate-x-1/2 h-[22px] w-[80px] bg-black rounded-full z-20 flex justify-between items-center px-3 shadow-sm">
+        <div className="w-1.5 h-1.5 bg-[#1a1a1a] rounded-full"></div>
+        <div className="w-1.5 h-1.5 bg-[#0f0f0f] rounded-full opacity-50"></div>
       </div>
 
-      {/* Screen Content */}
-      <div className="w-full h-full bg-white overflow-hidden rounded-[2.2rem] relative">
-        {/* Status Bar Mock */}
-        <div className="absolute top-0 w-full h-10 px-5 flex justify-between items-center text-[10px] font-bold z-10 text-white mix-blend-difference pt-2">
+      {/* Screen */}
+      <div className="w-full h-full bg-white overflow-hidden rounded-[2.1rem] relative">
+        {/* Status Bar */}
+        <div className="absolute top-0 w-full h-9 px-5 flex justify-between items-center text-[10px] font-bold z-10 text-white mix-blend-difference pt-2">
           <span>9:41</span>
           <div className="flex gap-1.5 items-center">
             <div className="h-2.5 w-2.5 rounded-full bg-current opacity-80"></div>
-            <div className="h-2.5 w-4 rounded-full border border-current opacity-80 relative">
-              <div className="absolute inset-0.5 bg-current rounded-full"></div>
+            <div className="h-2.5 w-4 rounded-[3px] border border-current opacity-80 relative">
+              <div className="absolute inset-0.5 bg-current rounded-[1px]"></div>
             </div>
           </div>
         </div>
 
-        {/* Scrollable App Area */}
+        {/* Scrollable App */}
         <div className="w-full h-full overflow-y-auto no-scrollbar scroll-smooth">
           {renderApp()}
         </div>
       </div>
 
       {/* Home Indicator */}
-      <div className="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-gray-900 rounded-full z-20 opacity-50"></div>
+      <div className="absolute bottom-1.5 left-1/2 -translate-x-1/2 w-1/3 h-1 bg-gray-800 rounded-full z-20"></div>
     </div>
   );
 };

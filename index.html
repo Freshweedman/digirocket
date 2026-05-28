@@ -4,160 +4,178 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DigiRocket - Sua Máquina de Vendas Pronta em 48h</title>
+
+  <!-- PRIMARY -->
+  <title>DigiRocket | Criação de Sites em Porto Alegre e Brasil · #1 no Google</title>
   <meta name="description"
-    content="Apareça no Google e receba pedidos no WhatsApp em 48h. A estrutura definitiva de vendas para negócios locais." />
+    content="DigiRocket é a agência #1 do Google em Porto Alegre para criação de sites, tráfego pago, automação WhatsApp e SEO local. Sites entregues em 48h, com performance, segurança e foco em vendas." />
+  <meta name="keywords"
+    content="criação de sites Porto Alegre, agência marketing digital RS, site para empresa Porto Alegre, tráfego pago Porto Alegre, SEO local Porto Alegre, automação WhatsApp, landing page de alta conversão, digirocket sites" />
+  <meta name="author" content="DigiRocket" />
+  <meta name="theme-color" content="#020617" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://www.digirocket.site/" />
 
-  <!-- Open Graph / Social Sharing -->
+  <!-- GEO TAGS -->
+  <meta name="geo.region" content="BR-RS" />
+  <meta name="geo.placename" content="Porto Alegre" />
+  <meta name="geo.position" content="-30.0346;-51.2177" />
+  <meta name="ICBM" content="-30.0346, -51.2177" />
+
+  <!-- OPEN GRAPH -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="DigiRocket - Sua Máquina de Vendas" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="DigiRocket" />
+  <meta property="og:url" content="https://www.digirocket.site/" />
+  <meta property="og:title" content="DigiRocket | Criação de Sites em Porto Alegre · #1 no Google" />
   <meta property="og:description"
-    content="Tenha um site de alta performance pronto em 48h. A revolução digital do seu negócio começa aqui." />
-  <meta property="og:image" content="/og-image.png" />
+    content="Sites entregues em 48h, tráfego pago, automação WhatsApp e SEO local. A agência #1 do Google em Porto Alegre para negócios que querem escalar no digital." />
+  <meta property="og:image" content="https://www.digirocket.site/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DigiRocket | Sites em 48h · #1 em Porto Alegre" />
+  <meta name="twitter:description"
+    content="Agência #1 do Google em Porto Alegre. Sites de alta conversão, tráfego pago e automação WhatsApp." />
+  <meta name="twitter:image" content="https://www.digirocket.site/og-image.png" />
+
+  <!-- ICONS & FONTS -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Inter:wght@100..900&display=swap"
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://wa.me" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Outfit', 'sans-serif'],
-          },
-          colors: {
-            brand: {
-              green: '#a3e635',
-              blue: '#3b82f6',
-              dark: '#020617',
-              card: '#0f172a',
-            }
-          },
-          animation: {
-            'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-            'fade-in-down': 'fadeInDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-            'blur-reveal': 'blurReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-            'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
-            'float': 'float 4s ease-in-out infinite',
-            'scroll': 'scroll 40s linear infinite',
-            'neon-pulse': 'neon-pulse 3s ease-in-out infinite',
-          },
-          keyframes: {
-            fadeInUp: {
-              '0%': { opacity: '0', transform: 'translateY(30px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            },
-            fadeInDown: {
-              '0%': { opacity: '0', transform: 'translateY(-30px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            },
-            blurReveal: {
-              '0%': { opacity: '0', filter: 'blur(20px)', transform: 'scale(0.95)' },
-              '100%': { opacity: '1', filter: 'blur(0)', transform: 'scale(1)' },
-            },
-            pulseGlow: {
-              '0%, 100%': { opacity: '0.4', filter: 'blur(30px)' },
-              '50%': { opacity: '0.8', filter: 'blur(45px)' },
-            },
-            float: {
-              '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(-15px)' },
-            },
-            scroll: {
-              '0%': { transform: 'translateX(0)' },
-              '100%': { transform: 'translateX(-50%)' }
-            },
-            shimmer: {
-              '0%': { transform: 'translateX(-100%)' },
-              '100%': { transform: 'translateX(100%)' }
-            },
-            'neon-pulse': {
-              '0%, 100%': { opacity: '0.3', filter: 'blur(8px)' },
-              '50%': { opacity: '0.6', filter: 'blur(12px)' }
-            }
-          }
+
+  <!-- STRUCTURED DATA: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://www.digirocket.site/#business",
+    "name": "DigiRocket",
+    "alternateName": "DigiRocket Sites",
+    "description": "Agência de marketing digital especializada em criação de sites de alta conversão, tráfego pago, automação WhatsApp e SEO local. Atendimento em Porto Alegre e todo o Brasil.",
+    "url": "https://www.digirocket.site",
+    "image": "https://www.digirocket.site/og-image.png",
+    "logo": "https://www.digirocket.site/favicon.svg",
+    "priceRange": "$$",
+    "telephone": "+5551984689725",
+    "areaServed": [
+      { "@type": "City", "name": "Porto Alegre" },
+      { "@type": "State", "name": "Rio Grande do Sul" },
+      { "@type": "Country", "name": "Brasil" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Porto Alegre",
+      "addressRegion": "RS",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -30.0346,
+      "longitude": -51.2177
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "08:00",
+      "closes": "20:00"
+    }],
+    "sameAs": [
+      "https://www.instagram.com/digirocket",
+      "https://wa.me/5551984689725"
+    ],
+    "serviceType": [
+      "Criação de Sites",
+      "Landing Pages de Alta Conversão",
+      "Gestão de Tráfego Pago",
+      "Automação WhatsApp",
+      "SEO Local",
+      "Gestão de Mídias Sociais",
+      "Produção de Vídeos",
+      "Consultoria Digital"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Pacotes DigiRocket",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": { "@type": "Service", "name": "Landing Page Profissional" },
+          "price": "497",
+          "priceCurrency": "BRL"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": { "@type": "Service", "name": "Site Premium · Digital Machine" },
+          "price": "997",
+          "priceCurrency": "BRL"
         }
-      }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "47",
+      "bestRating": "5",
+      "worstRating": "1"
     }
+  }
   </script>
-  <style>
-    /* CUSTOM TECH SCROLLBAR */
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
 
-    ::-webkit-scrollbar-track {
-      background: #020617;
-    }
+  <!-- STRUCTURED DATA: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "DigiRocket",
+    "url": "https://www.digirocket.site",
+    "inLanguage": "pt-BR",
+    "publisher": { "@id": "https://www.digirocket.site/#business" }
+  }
+  </script>
 
-    ::-webkit-scrollbar-thumb {
-      background: #a3e635;
-      border: 3px solid #020617;
-      border-radius: 10px;
+  <!-- STRUCTURED DATA: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DigiRocket",
+    "url": "https://www.digirocket.site",
+    "logo": "https://www.digirocket.site/favicon.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+5551984689725",
+      "contactType": "sales",
+      "areaServed": "BR",
+      "availableLanguage": ["pt-BR"]
     }
+  }
+  </script>
 
-    ::-webkit-scrollbar-thumb:hover {
-      background: #bef264;
-    }
-
-    .mask-gradient-x {
-      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    }
-
-    /* PRELOADER STYLES */
-    #preloader {
-      position: fixed;
-      inset: 0;
-      background: #020617;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-    }
-
-    .preloader-line {
-      width: 150px;
-      height: 2px;
-      background: #1e293b;
-      position: relative;
-      margin-top: 20px;
-      overflow: hidden;
-    }
-
-    .preloader-line::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 40%;
-      background: #a3e635;
-      animation: preloader-move 1.5s infinite ease-in-out;
-      box-shadow: 0 0 10px #a3e635;
-    }
-
-    @keyframes preloader-move {
-      0% {
-        left: -40%;
-      }
-
-      100% {
-        left: 100%;
-      }
-    }
-  </style>
   <link rel="stylesheet" href="/index.css">
 </head>
 
 <body class="bg-[#020617] text-white antialiased">
   <div id="root"></div>
+
+  <!-- SEO fallback content for crawlers (no-JS) -->
+  <noscript>
+    <div style="padding:48px;font-family:Inter,sans-serif;color:#fff;background:#020617;max-width:900px;margin:0 auto;">
+      <h1 style="font-size:2rem;color:#a3e635">DigiRocket · Criação de Sites em Porto Alegre</h1>
+      <p>Agência #1 do Google em Porto Alegre para criação de sites profissionais, tráfego pago, automação WhatsApp e SEO local. Sites entregues em 48h, com performance, segurança e foco em vendas.</p>
+      <p>Atendimento: Porto Alegre, Rio Grande do Sul e todo o Brasil.</p>
+      <p>WhatsApp: <a href="https://wa.me/5551984689725" style="color:#a3e635">(51) 98468-9725</a></p>
+    </div>
+  </noscript>
+
   <script type="module" src="/index.tsx"></script>
 </body>
 

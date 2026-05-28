@@ -99,7 +99,7 @@ export const nicheData: NicheOption[] = [
             ctaText: 'Agendar Consulta',
             products: [
                 { id: 1, name: 'Clareamento Laser', price: 'Consultar', image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=400&q=80' },
-                { id: 2, name: 'Lentes de Contato', price: 'Consultar', image: 'https://images.unsplash.com/photo-1600170311833-c2cf3780749f?auto=format&fit=crop&w=400&q=80' },
+                { id: 2, name: 'Lentes de Contato', price: 'Consultar', image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=400&q=80' },
             ]
         }
     },
@@ -116,8 +116,8 @@ export const nicheData: NicheOption[] = [
             primaryColor: 'bg-rose-700',
             ctaText: 'Ver Cardápio',
             products: [
-                { id: 1, name: 'Combo Especial', price: 'R$ 89,90', image: 'https://images.unsplash.com/photo-1617196019294-dc44dfacb43d?auto=format&fit=crop&w=400&q=80' },
-                { id: 2, name: 'Temaki Salmão', price: 'R$ 24,90', image: 'https://images.unsplash.com/photo-1579584425555-c3ce17fd43fb?auto=format&fit=crop&w=400&q=80' },
+                { id: 1, name: 'Combo Especial', price: 'R$ 89,90', image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=400&q=80' },
+                { id: 2, name: 'Temaki Salmão', price: 'R$ 24,90', image: 'https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=400&q=80' },
             ]
         }
     },
@@ -134,7 +134,7 @@ export const nicheData: NicheOption[] = [
             primaryColor: 'bg-slate-900',
             ctaText: 'Agendar Corte',
             products: [
-                { id: 1, name: 'Corte Cabelo', price: 'R$ 45,00', image: 'https://images.unsplash.com/photo-1599351431202-6e0005079746?auto=format&fit=crop&w=400&q=80' },
+                { id: 1, name: 'Corte Cabelo', price: 'R$ 45,00', image: 'https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=400&q=80' },
                 { id: 2, name: 'Barba Completa', price: 'R$ 35,00', image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=400&q=80' },
             ]
         }
@@ -146,13 +146,13 @@ export const nicheData: NicheOption[] = [
         color: 'bg-pink-600 text-white',
         template: 'booking',
         appConfig: {
-            heroImage: 'https://images.unsplash.com/photo-1632345031435-07ca6834a362?auto=format&fit=crop&w=800&q=80',
+            heroImage: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=80',
             heroTitle: 'Glamour Nails',
             heroSubtitle: 'Suas unhas com design de luxo.',
             primaryColor: 'bg-pink-600',
             ctaText: 'Marcar Horário',
             products: [
-                { id: 1, name: 'Alongamento em Gel', price: 'R$ 150', image: 'https://images.unsplash.com/photo-1604654894610-df4909950613?auto=format&fit=crop&w=400&q=80' },
+                { id: 1, name: 'Alongamento em Gel', price: 'R$ 150', image: 'https://images.unsplash.com/photo-1604902396830-aca29e19b067?auto=format&fit=crop&w=400&q=80' },
                 { id: 2, name: 'Manicure Express', price: 'R$ 40', image: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=400&q=80' },
             ]
         }
@@ -171,7 +171,7 @@ export const nicheData: NicheOption[] = [
             ctaText: 'Agendar',
             products: [
                 { id: 1, name: 'Limpeza de Pele', price: 'R$ 120,00', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=400&q=80' },
-                { id: 2, name: 'Massagem Relaxante', price: 'R$ 90,00', image: 'https://images.unsplash.com/photo-1519823551278-64ac927ac4dd?auto=format&fit=crop&w=400&q=80' },
+                { id: 2, name: 'Massagem Relaxante', price: 'R$ 90,00', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=400&q=80' },
             ]
         }
     },
@@ -182,7 +182,7 @@ export const nicheData: NicheOption[] = [
         color: 'bg-blue-600 text-white',
         template: 'delivery',
         appConfig: {
-            heroImage: 'https://images.unsplash.com/photo-1556656793-062ff9878258?auto=format&fit=crop&w=800&q=80',
+            heroImage: 'https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=800&q=80',
             heroTitle: 'Tech Store',
             heroSubtitle: 'Iphones e acessórios com garantia.',
             primaryColor: 'bg-blue-600',
@@ -207,7 +207,7 @@ export const nicheData: NicheOption[] = [
             ctaText: 'Agendar Serviço',
             products: [
                 { id: 1, name: 'Revisão Completa', price: 'R$ 290,00', image: 'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=400&q=80' },
-                { id: 2, name: 'Troca de Óleo', price: 'R$ 120,00', image: 'https://images.unsplash.com/photo-1486262715619-01b80258e0c5?auto=format&fit=crop&w=400&q=80' },
+                { id: 2, name: 'Troca de Óleo', price: 'R$ 120,00', image: 'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=400&q=80' },
             ]
         }
     },
@@ -240,7 +240,7 @@ export const nicheData: NicheOption[] = [
             ctaText: 'Agendar Banho',
             products: [
                 { id: 1, name: 'Banho e Tosa', price: 'R$ 50,00', image: 'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=400&q=80' },
-                { id: 2, name: 'Vacinação', price: 'R$ 80,00', image: 'https://images.unsplash.com/photo-1589924691195-41432c84c161?auto=format&fit=crop&w=400&q=80' },
+                { id: 2, name: 'Vacinação', price: 'R$ 80,00', image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=400&q=80' },
             ]
         }
     },
@@ -296,7 +296,7 @@ export const nicheData: NicheOption[] = [
         color: 'bg-zinc-800 text-white',
         template: 'lead',
         appConfig: {
-            heroImage: 'https://images.unsplash.com/photo-1503387762-592eea58f4e?auto=format&fit=crop&w=800&q=80',
+            heroImage: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
             heroTitle: 'Studio Arq',
             heroSubtitle: 'Projetos que traduzem sua essência.',
             primaryColor: 'bg-zinc-900',
@@ -383,7 +383,7 @@ export const nicheData: NicheOption[] = [
             products: [
                 { id: 1, name: 'Vestido Verão', price: 'R$ 129,90', image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=80' },
                 { id: 2, name: 'Blusa Casual', price: 'R$ 79,90', image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=400&q=80' },
-                { id: 3, name: 'Jaqueta Jeans', price: 'R$ 189,90', image: 'https://images.unsplash.com/photo-1523297928132-c5145ec81d17?auto=format&fit=crop&w=400&q=80' },
+                { id: 3, name: 'Jaqueta Jeans', price: 'R$ 189,90', image: 'https://images.unsplash.com/photo-1608228088998-57828365d486?auto=format&fit=crop&w=400&q=80' },
                 { id: 4, name: 'Saia Midi', price: 'R$ 99,90', image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=400&q=80' },
             ]
         }
@@ -395,7 +395,7 @@ export const nicheData: NicheOption[] = [
         color: 'bg-sky-600 text-white',
         template: 'lead',
         appConfig: {
-            heroImage: 'https://images.unsplash.com/photo-1574818310705-d85cf6350325?auto=format&fit=crop&w=800&q=80',
+            heroImage: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80',
             heroTitle: 'Ar Profissional',
             heroSubtitle: 'Instalação e manutenção corretiva.',
             primaryColor: 'bg-sky-600',
