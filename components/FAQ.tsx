@@ -6,25 +6,45 @@ export const FAQ: React.FC = () => {
 
   const faqs = [
     {
-      q: "Quanto tempo demora para meu site ficar pronto?",
-      a: "Entregamos sua estrutura completa em até 48 horas após o envio das informações básicas do seu negócio."
+      q: 'Quanto tempo demora pra ficar pronto?',
+      a: 'Dois dias úteis. Você manda as informações hoje, site no ar depois de amanhã. Você aprova o rascunho antes de ir ao ar — se demorar mais, avisamos antes e combinamos o que fazer.',
     },
     {
-      q: "Preciso pagar mensalidade?",
-      a: "Não. Na DigiRocket você paga uma única vez pela criação e desenvolvimento. A estrutura é sua para sempre."
+      q: 'Vou ter que pagar mensalidade?',
+      a: 'Não. Você paga uma vez só. Hospedagem está inclusa no plano — não chega boleto no fim do mês. No Plano Começa Agora a hospedagem é grátis por 1 ano. No Plano Cresce de Verdade é grátis pra sempre.',
     },
     {
-      q: "O site funciona bem no celular?",
-      a: "Com certeza. Nossos projetos são 'Mobile-First', o que significa que são otimizados primeiro para celulares, onde ocorre 90% das buscas hoje."
+      q: 'Funciona bem no celular?',
+      a: 'Sim. Na verdade, é feito primeiro pro celular, porque 7 em cada 10 clientes vão acessar pelo telefone. Botão grande, texto legível, foto que carrega rápido mesmo em 3G.',
     },
     {
-      q: "E se eu precisar mudar algo no futuro?",
-      a: "Você recebe um painel administrativo simples para fazer alterações básicas, ou pode contar com nosso suporte VIP para atualizações mais complexas."
+      q: 'Quando meu cliente pesquisar "padaria perto de mim", vai me achar?',
+      a: 'É exatamente pra isso que serve. A gente cadastra seu negócio no Google Maps e no Google Meu Negócio. Quando alguém buscar pelo que você vende na sua cidade ou bairro, seu nome aparece.',
     },
     {
-      q: "Como meu site vai aparecer no Google?",
-      a: "Implementamos as melhores práticas de SEO Local e configuramos seu Google Meu Negócio para que você apareça para clientes da sua região."
-    }
+      q: 'Preciso ter fotos profissionais do meu negócio?',
+      a: 'Não. Foto do celular serve perfeitamente. A gente otimiza as imagens pra ficarem bonitas no site. Você não precisa contratar fotógrafo nem nada do tipo.',
+    },
+    {
+      q: 'E se eu quiser mudar alguma coisa depois?',
+      a: 'No Plano Cresce de Verdade você mesmo edita: troca foto, muda texto, atualiza preço, sem precisar chamar ninguém — é simples como o Instagram. No Plano Começa Agora você manda mensagem no WhatsApp e a gente faz por você.',
+    },
+    {
+      q: 'Tenho que contratar hospedagem separado?',
+      a: 'Nem se preocupe. Está tudo incluso. Você não precisa comprar nada a mais nem entender de tecnologia.',
+    },
+    {
+      q: 'E se eu não gostar do resultado?',
+      a: '7 dias de garantia. Se não gostar, devolvemos 100% do valor. Sem pergunta, sem burocracia. E antes de ir ao ar, você aprova o rascunho — então você já sabe o que vai receber.',
+    },
+    {
+      q: 'Meu negócio é pequeno. Vale a pena ter site?',
+      a: 'Se você tem WhatsApp de negócio, você já precisa de site. O site é o que faz o cliente te achar antes de mandar mensagem. Sem site, você só vende pra quem já te conhece.',
+    },
+    {
+      q: 'Vocês atendem fora da minha cidade?',
+      a: 'Sim. Atendemos todo o Brasil de forma 100% remota. Você manda as informações pelo WhatsApp, a gente cria o site e coloca no Google — não importa onde você esteja.',
+    },
   ];
 
   return (
@@ -40,11 +60,11 @@ export const FAQ: React.FC = () => {
         <div className="text-center mb-16 md:mb-24 space-y-6 reveal-hidden">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-green/15 rounded-full border border-brand-green/30">
             <HelpCircle size={14} className="text-brand-green" />
-            <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-green">Dúvidas Frequentes</span>
+            <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-green">Perguntas que sempre fazem</span>
           </div>
           <h2 className="font-sans text-4xl md:text-7xl font-black text-white tracking-tight leading-none">
-            Tudo o que você <br />
-            <span className="text-brand-green font-black">precisa saber.</span>
+            Pode perguntar. <br />
+            <span className="text-brand-green font-black">A gente responde direto.</span>
           </h2>
         </div>
 
@@ -79,13 +99,13 @@ export const FAQ: React.FC = () => {
         </div>
 
         <div className="mt-20 text-center reveal-hidden">
-          <p className="text-slate-400 font-medium mb-8">Ainda tem alguma dúvida específica?</p>
+          <p className="text-slate-400 font-medium mb-8">Tem outra dúvida? Manda mensagem que a gente responde rapidinho.</p>
           <button
             onClick={() => window.open('https://wa.me/5551984689725', '_blank')}
             className="inline-flex items-center gap-3 bg-white/5 text-white px-10 py-5 rounded-3xl font-black hover:bg-brand-green hover:text-slate-950 transition-all border border-white/10"
           >
             <MessageCircle size={20} />
-            Falar com Consultor no WhatsApp
+            Falar no WhatsApp
           </button>
         </div>
       </div>

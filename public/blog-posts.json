@@ -1,0 +1,68 @@
+{
+  "posts": [
+    {
+      "slug": "como-criar-site-para-padaria",
+      "title": "Como Criar um Site para Padaria que Vende Todo Dia",
+      "description": "Descubra como ter um site profissional para sua padaria que atrai clientes e aumenta as vendas em até 3x.",
+      "keywords": ["site para padaria", "padaria online", "cardápio digital padaria"],
+      "date": "2026-06-01",
+      "category": "Guias"
+    },
+    {
+      "slug": "site-barbearia-agenda-lotada",
+      "title": "Site para Barbearia: Como Lotar sua Agenda com Agendamento Online",
+      "description": "Aprenda como um site com sistema de agendamento pode transformar sua barbearia e eliminar no-shows.",
+      "keywords": ["site para barbearia", "agendamento online barbearia", "sistema para barbearia"],
+      "date": "2026-05-28",
+      "category": "Guias"
+    },
+    {
+      "slug": "marketing-digital-pequenas-empresas",
+      "title": "Marketing Digital para Pequenas Empresas: Guia Completo 2026",
+      "description": "Tudo que você precisa saber sobre marketing digital para fazer seu pequeno negócio crescer online.",
+      "keywords": ["marketing digital", "pequenas empresas", "marketing para comércio"],
+      "date": "2026-05-25",
+      "category": "Marketing"
+    },
+    {
+      "slug": "quanto-custa-criar-site-profissional",
+      "title": "Quanto Custa Criar um Site Profissional em 2026?",
+      "description": "Descubra os valores reais para criar um site profissional e o que está incluído em cada pacote.",
+      "keywords": ["preço site", "quanto custa site", "valor criação site"],
+      "date": "2026-05-20",
+      "category": "Preços"
+    },
+    {
+      "slug": "whatsapp-automatico-para-negocios",
+      "title": "WhatsApp Automático: Como Atender Clientes 24h Sem Contratar Ninguém",
+      "description": "Aprenda como automatizar seu WhatsApp e nunca mais perder uma venda por não responder rápido.",
+      "keywords": ["whatsapp automático", "chatbot whatsapp", "automação whatsapp"],
+      "date": "2026-05-15",
+      "category": "Automação"
+    },
+    {
+      "slug": "seo-local-aparecer-google",
+      "title": "SEO Local: Como Aparecer no Google Quando o Cliente Busca",
+      "description": "Estratégias práticas de SEO local para seu negócio aparecer primeiro no Google da sua região.",
+      "keywords": ["seo local", "aparecer no google", "google meu negócio"],
+      "date": "2026-05-10",
+      "category": "SEO"
+    },
+    {
+      "slug": "instagram-para-negocios-locais",
+      "title": "Instagram para Negócios Locais: Como Crescer e Vender Mais",
+      "description": "Guia completo para usar o Instagram como ferramenta de vendas para seu comércio local.",
+      "keywords": ["instagram para negócios", "marketing instagram", "vender pelo instagram"],
+      "date": "2026-05-05",
+      "category": "Redes Sociais"
+    },
+    {
+      "slug": "trafego-pago-iniciantes",
+      "title": "Tráfego Pago para Iniciantes: Google Ads e Facebook Ads Explicados",
+      "description": "Entenda como funciona tráfego pago e como começar a anunciar sem desperdiçar dinheiro.",
+      "keywords": ["tráfego pago", "google ads", "facebook ads", "anúncios online"],
+      "date": "2026-05-01",
+      "category": "Tráfego Pago"
+    }
+  ]
+}

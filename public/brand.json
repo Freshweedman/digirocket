@@ -1,0 +1,30 @@
+{
+  "name": "DigiRocket",
+  "legalName": "DigiRocket",
+  "url": "https://www.digirocket.site",
+  "logo": "https://www.digirocket.site/logo.png",
+  "telephone": "+55 51 98468-9725",
+  "email": "contato@digirocket.site",
+  "address": {
+    "locality": "Porto Alegre",
+    "region": "RS",
+    "country": "BR"
+  },
+  "description": "Agência digital brasileira que cria sites profissionais em 48 horas a partir de R$497, sem mensalidade.",
+  "serviceArea": "Brasil",
+  "mainServices": [
+    "Criação de sites",
+    "Sites em 48 horas",
+    "Sites para pequenos negócios",
+    "Landing pages",
+    "Google Meu Negócio",
+    "Sites com WhatsApp"
+  ],
+  "priceRange": "R$497 - R$997",
+  "sameAs": [
+    "https://www.instagram.com/digirocket.site",
+    "https://www.facebook.com/digirocket.site",
+    "https://www.linkedin.com/company/digirocket-site",
+    "https://www.youtube.com/@digirocketsite"
+  ]
+}

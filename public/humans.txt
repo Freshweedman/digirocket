@@ -1,0 +1,12 @@
+/* TEAM */
+Name: DigiRocket
+Role: Agência Digital
+Location: Porto Alegre, RS, Brasil
+Site: https://www.digirocket.site
+Contact: +55 51 98468-9725
+
+/* SITE */
+Standards: HTML5, CSS3, ES6+
+Stack: React, TypeScript, Vite, Tailwind CSS
+Hosting: Vercel
+Last update: 2026-06-10

@@ -1,69 +1,191 @@
 import React from 'react';
-import { Quote, Star } from 'lucide-react';
+import { Quote, Star, MapPin, TrendingUp } from 'lucide-react';
+
+type Testimonial = {
+  name: string;
+  city: string;
+  business: string;
+  niche: string;
+  before: string;
+  after: string;
+  quote: string;
+  initials: string;
+  color: string;
+};
+
+const testimonials: Testimonial[] = [
+  {
+    name: 'Carlos S.',
+    city: 'São Paulo/SP',
+    business: 'Monster Burger',
+    niche: 'Hamburgueria',
+    before: '15 pedidos / semana',
+    after: '40 pedidos / semana',
+    quote: 'Antes eu dependia só de indicação. Depois que a DigiRocket colocou meu site no ar, cheguei a 40 pedidos. E ficou pronto em dois dias mesmo.',
+    initials: 'CS',
+    color: 'from-orange-500 to-red-600',
+  },
+  {
+    name: 'Mariana C.',
+    city: 'Belo Horizonte/MG',
+    business: 'Studio Glamour',
+    niche: 'Salão de Beleza',
+    before: 'agenda com buracos',
+    after: 'agenda lotada 2 semanas antes',
+    quote: 'Hoje minha agenda tá lotada com duas semanas de antecedência. As clientes me acham no Google quando pesquisam salão aqui no bairro.',
+    initials: 'MC',
+    color: 'from-pink-500 to-fuchsia-600',
+  },
+  {
+    name: 'Roberto M.',
+    city: 'Curitiba/PR',
+    business: 'Auto Center Top',
+    niche: 'Auto Center',
+    before: 'dia inteiro no telefone',
+    after: 'cliente chega quase decidido',
+    quote: 'Eu ficava no telefone o dia inteiro passando orçamento. Agora o cliente me acha no Google, já vê o que eu faço e chega no WhatsApp quase decidido.',
+    initials: 'RM',
+    color: 'from-blue-700 to-slate-900',
+  },
+  {
+    name: 'Ana Paula',
+    city: 'Fortaleza/CE',
+    business: 'Clínica Bem-Estar',
+    niche: 'Estética',
+    before: 'cliente não confiava',
+    after: 'paciente chega confiando',
+    quote: 'O design do site passa autoridade. Meus pacientes já chegam confiando no meu trabalho antes mesmo da primeira consulta.',
+    initials: 'AP',
+    color: 'from-teal-500 to-emerald-600',
+  },
+  {
+    name: 'Julio C.',
+    city: 'Brasília/DF',
+    business: 'Advocacia Digital',
+    niche: 'Advocacia',
+    before: 'sem presença online',
+    after: 'consultas de alto ticket',
+    quote: 'Precisava de algo profissional e rápido. Entregaram em 48h um site que traz consultas de alto ticket todos os dias.',
+    initials: 'JC',
+    color: 'from-stone-700 to-slate-900',
+  },
+  {
+    name: 'Fernanda L.',
+    city: 'Recife/PE',
+    business: 'Boutique Bella',
+    niche: 'Moda',
+    before: 'só vendia presencial',
+    after: '+40% vendas online',
+    quote: 'Minhas vendas online subiram 40% no primeiro mês. As clientes veem a peça no celular e fecham comigo no WhatsApp.',
+    initials: 'FL',
+    color: 'from-rose-500 to-pink-600',
+  },
+  {
+    name: 'Ricardo S.',
+    city: 'Goiânia/GO',
+    business: 'Academia Iron',
+    niche: 'Academia',
+    before: 'matrícula só no balcão',
+    after: 'matrículas pelo celular',
+    quote: 'O melhor investimento que fiz esse ano. O suporte é impecável e o site é super rápido no celular do aluno.',
+    initials: 'RS',
+    color: 'from-blue-700 to-indigo-800',
+  },
+];
 
 export const Testimonials: React.FC = () => {
-    const testimonials = [
-        { name: "Carlos Silva", role: "Monster Burger", text: "Começamos como um delivery simples e hoje somos a maior hamburgueria da região. O site da DigiRocket foi o divisor de águas.", initials: "CS", color: "bg-orange-500" },
-        { name: "Mariana Costa", role: "Studio Glamour", text: "Minha agenda vivia vazia. Depois que o site foi pro ar, recebo agendamentos automáticos todos os dias pelo WhatsApp.", initials: "MC", color: "bg-pink-500" },
-        { name: "Roberto Mendes", role: "Auto Center Top", text: "A facilidade do cliente agendar o serviço pelo site mudou meu negócio. Menos tempo no telefone, mais tempo faturando.", initials: "RM", color: "bg-blue-600" },
-        { name: "Ana Paula", role: "Clínica Bem-Estar", text: "O design do site passa uma autoridade incrível. Meus clientes já chegam confiando no meu trabalho.", initials: "AP", color: "bg-teal-500" },
-        { name: "Julio Cesar", role: "Advocacia Digital", text: "Precisava de algo profissional e rápido. Entregaram em 48h um site que converte consultas de alto ticket todos os dias.", initials: "JC", color: "bg-slate-800" },
-        { name: "Fernanda Lima", role: "Boutique Bella", text: "Minhas vendas online subiram 40% no primeiro mês. O checkout deles pelo WhatsApp é extremamente veloz.", initials: "FL", color: "bg-rose-500" },
-        { name: "Ricardo Santos", role: "Academia Iron", text: "O melhor investimento que fiz este ano. O suporte deles é impecável e o site é super rápido no celular.", initials: "RS", color: "bg-emerald-600" }
-    ];
+  return (
+    <section className="py-16 md:py-24 px-4 bg-white relative overflow-hidden">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-12 reveal-hidden">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-green/10 rounded-full border border-brand-green/20 mb-4">
+            <Star size={14} className="text-brand-green fill-brand-green" />
+            <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-green">Negócios reais · Brasil</span>
+          </div>
+          <h2 className="font-sans text-3xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+            Quem já tá vendendo <br className="hidden md:block"/>
+            <span className="text-brand-green">com site da gente</span>
+          </h2>
+        </div>
 
-    return (
-        <section className="py-24 md:py-40 bg-white relative overflow-hidden">
-            {/* Background Texture — DOTS for White theme */}
-            <div className="absolute inset-0 opacity-[0.06] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#000 1.2px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
-            {/* Soft glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[60%] bg-brand-green/5 blur-[180px] rounded-full pointer-events-none"></div>
-
-            <div className="max-w-7xl mx-auto px-4 relative z-10">
-                <div className="text-center mb-20 md:mb-32 space-y-6 reveal-hidden">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-green/10 rounded-full border border-brand-green/20">
-                        <Star size={14} className="text-brand-green fill-brand-green" />
-                        <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-green">Recomendado por Quem Vence</span>
-                    </div>
-                    <h2 className="font-sans text-4xl md:text-7xl font-black text-slate-900 tracking-tight leading-none">
-                        Empresas que <span className="text-brand-green">Dominam o Mercado.</span>
-                    </h2>
-                    <p className="text-slate-500 text-lg md:text-2xl max-w-2xl mx-auto font-medium leading-relaxed">
-                        Junte-se a centenas de negócios que já escalaram com a <span className="text-slate-900 font-bold">tecnologia DigiRocket.</span>
-                    </p>
+        {/* Carrossel - Cards menores passando */}
+        <div className="relative overflow-hidden mask-gradient-x-white">
+          <div className="flex gap-4 animate-scroll-testimonials">
+            {[...testimonials, ...testimonials].map((t, idx) => (
+              <div
+                key={idx}
+                className="shrink-0 w-[300px] md:w-[350px] bg-slate-50 rounded-2xl p-5 border border-slate-200 hover:border-brand-green/30 hover:shadow-xl transition-all group"
+              >
+                {/* Stars */}
+                <div className="flex gap-0.5 mb-3">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} size={12} className="text-brand-green fill-brand-green" />
+                  ))}
                 </div>
 
-                <div className="relative w-full overflow-hidden mask-gradient-x -mx-4 px-4 reveal-hidden">
-                    <div className="flex gap-6 md:gap-10 w-max animate-scroll py-8">
-                        {[...testimonials, ...testimonials].map((t, i) => (
-                            <div
-                                key={i}
-                                className="w-[320px] md:w-[500px] relative flex-shrink-0 rounded-[2.5rem] p-10 md:p-12 group overflow-hidden transition-all duration-500 hover:-translate-y-2 bg-slate-50 border border-slate-100 shadow-sm hover:shadow-xl"
-                            >
-                                {/* Dot texture */}
-                                <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '18px 18px' }}></div>
-                                <Quote className="absolute top-8 right-10 text-brand-green/10 w-14 h-14 group-hover:text-brand-green/20 transition-all duration-500" />
-
-                                <div className="flex gap-1 mb-6 relative z-10">
-                                    {[1, 2, 3, 4, 5].map(star => <Star key={star} size={14} className="text-brand-green fill-brand-green" />)}
-                                </div>
-
-                                <p className="text-slate-600 mb-10 leading-relaxed font-medium relative z-10 text-base md:text-xl italic">"{t.text}"</p>
-
-                                <div className="flex items-center gap-5 border-t border-slate-100 pt-8 relative z-10">
-                                    <div className={`w-14 h-14 rounded-xl ${t.color} flex items-center justify-center text-white font-black text-xl shadow-lg`}>
-                                        {t.initials}
-                                    </div>
-                                    <div>
-                                        <p className="text-slate-900 font-black text-lg tracking-tight leading-none mb-1">{t.name}</p>
-                                        <p className="text-slate-400 text-[10px] font-black uppercase tracking-widest">{t.role}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                {/* Before/After */}
+                <div className="mb-4 space-y-2">
+                  <div className="flex items-center gap-2 text-xs">
+                    <TrendingUp size={12} className="text-slate-400" />
+                    <span className="text-slate-500 line-through">{t.before}</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm font-bold">
+                    <TrendingUp size={14} className="text-brand-green" />
+                    <span className="text-slate-900">{t.after}</span>
+                  </div>
                 </div>
-            </div>
-        </section>
-    );
+
+                {/* Quote */}
+                <Quote size={18} className="text-brand-green/20 mb-2" />
+                <p className="text-slate-700 text-sm leading-relaxed mb-4">
+                  "{t.quote}"
+                </p>
+
+                {/* Author */}
+                <div className="flex items-center gap-3 pt-3 border-t border-slate-200">
+                  <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${t.color} flex items-center justify-center flex-shrink-0`}>
+                    <span className="text-white text-xs font-black">{t.initials}</span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-bold text-slate-900 text-sm truncate">{t.name}</p>
+                    <p className="text-xs text-brand-green font-bold truncate">{t.business} · {t.niche}</p>
+                    <div className="flex items-center gap-1 mt-0.5">
+                      <MapPin size={10} className="text-slate-400" />
+                      <p className="text-[10px] text-slate-500 uppercase tracking-wide">{t.city}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Footer */}
+        <p className="text-center mt-8 text-xs text-slate-500 uppercase tracking-wider font-bold">
+          Negócios reais de todo o Brasil · Depoimentos com fotos disponíveis sob solicitação
+        </p>
+      </div>
+
+      <style>{`
+        @keyframes scroll-testimonials {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+
+        .animate-scroll-testimonials {
+          animation: scroll-testimonials 40s linear infinite;
+        }
+
+        .animate-scroll-testimonials:hover {
+          animation-play-state: paused;
+        }
+
+        .mask-gradient-x-white {
+          -webkit-mask-image: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+          mask-image: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+        }
+      `}</style>
+    </section>
+  );
 };

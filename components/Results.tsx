@@ -14,21 +14,21 @@ export const Results: React.FC = () => {
                   <div className="space-y-6">
                      <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-green/10 rounded-full border border-brand-green/20">
                         <Star size={14} className="text-brand-green fill-brand-green" />
-                        <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-green">Resultados Comprovados</span>
+                        <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-green">Resultado de verdade</span>
                      </div>
                      <h2 className="font-sans text-4xl md:text-7xl font-black text-slate-900 tracking-tight leading-none">
-                        Não é apenas design.<br />
-                        <span className="text-brand-green">É lucro no seu bolso.</span>
+                        Não é só ficar bonito.<br />
+                        <span className="text-brand-green">É vender mais.</span>
                      </h2>
                      <p className="text-slate-500 text-lg md:text-2xl font-medium leading-relaxed max-w-xl">
-                        Nossas estruturas são desenhadas com base em dados de comportamento humano, garantindo que o visitante tome a ação que você deseja.
+                        Cada botão, cada foto, cada texto pensado pra fazer o cliente tomar decisão. Não é magia, é experiência.
                      </p>
                   </div>
 
                   <div className="grid grid-cols-2 gap-6">
                      {[
-                        { label: 'Novos Leads/Dia', value: '15+', icon: Users },
-                        { label: 'Taxa de Conversão', value: '24%', icon: TrendingUp },
+                        { label: 'Cliente novo por dia', value: '15+', icon: Users },
+                        { label: 'Visitante que compra', value: '24%', icon: TrendingUp },
                      ].map((stat, i) => (
                         <div key={i} className="bg-slate-50 p-6 md:p-10 rounded-[2.5rem] border border-slate-100 group hover:border-brand-green/30 transition-all shadow-sm">
                            <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-brand-green mb-6 shadow-sm group-hover:bg-brand-green group-hover:text-white transition-all">
@@ -50,19 +50,19 @@ export const Results: React.FC = () => {
                               <CheckCircle size={28} />
                            </div>
                            <div>
-                              <div className="text-xl font-black text-slate-900 uppercase tracking-widest text-[10px]">Checklist de Sucesso</div>
-                              <div className="text-lg font-black text-slate-900">Padrão DigiRocket</div>
+                              <div className="text-xl font-black text-slate-900 uppercase tracking-widest text-[10px]">Tá tudo aqui</div>
+                              <div className="text-lg font-black text-slate-900">No seu site</div>
                            </div>
                         </div>
                      </div>
 
                      <ul className="space-y-6">
                         {[
-                           'Carregamento em menos de 1.5s',
-                           'Copywriting persuasivo (gatilhos mentais)',
-                           'Otimização completa para celular',
-                           'Botões de CTA estrategicamente posicionados',
-                           'Integração direta com WhatsApp e CRM'
+                           'Abre rápido em qualquer celular',
+                           'Texto que faz cliente confiar',
+                           'Funciona perfeito no celular',
+                           'Botão de WhatsApp em destaque',
+                           'WhatsApp recebendo mensagem direto'
                         ].map((item, i) => (
                            <li key={i} className="flex items-center gap-4 group">
                               <div className="w-6 h-6 rounded-full bg-brand-green/10 flex items-center justify-center text-brand-green group-hover:bg-brand-green group-hover:text-white transition-all shrink-0">

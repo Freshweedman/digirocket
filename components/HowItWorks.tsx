@@ -5,28 +5,32 @@ export const HowItWorks: React.FC = () => {
   const steps = [
     {
       icon: MousePointer2,
-      title: "Diagnóstico",
-      description: "Analisamos seu mercado e concorrentes para criar uma estratégia de venda matadora.",
-      color: "blue"
+      title: 'Você manda as informações',
+      description: 'A gente manda um formulário simples pelo WhatsApp. Leva menos de 10 minutos. Só precisa do nome do negócio, endereço, WhatsApp e 3 fotos do celular mesmo — fotógrafo não precisa.',
+      color: 'blue',
+      time: '10 min',
     },
     {
       icon: Layout,
-      title: "Construção",
-      description: "Desenvolvemos sua estrutura em 48h focando em velocidade e conversão mobile.",
-      color: "brand-green"
+      title: 'A gente cria o site (48h)',
+      description: 'Em dois dias úteis seu site está pronto. Você aprova o rascunho antes de ir ao ar — 1 rodada de ajustes inclusa. Só vai ao ar quando você aprovar.',
+      color: 'brand-green',
+      time: '48 horas',
     },
     {
       icon: Zap,
-      title: "Otimização",
-      description: "Configuramos o SEO e Google Meu Negócio para você dominar as buscas locais.",
-      color: "orange"
+      title: 'Cadastramos no Google',
+      description: 'Colocamos seu negócio no Google Maps e no Google Meu Negócio. Quando alguém buscar pelo que você vende na sua cidade, você aparece antes do concorrente.',
+      color: 'orange',
+      time: '24h após o site',
     },
     {
       icon: Rocket,
-      title: "Escala",
-      description: "Sua máquina está pronta. Comece a receber leads e pedidos todos os dias.",
-      color: "purple"
-    }
+      title: 'Cliente chega no WhatsApp',
+      description: 'Pronto. O telefone começa a tocar, o WhatsApp começa a vibrar, e você cuida do que faz de melhor. Suporte direto no WhatsApp por 30 dias após a entrega.',
+      color: 'purple',
+      time: 'Imediato',
+    },
   ];
 
   return (
@@ -40,15 +44,15 @@ export const HowItWorks: React.FC = () => {
           <div className="max-w-2xl space-y-6 reveal-hidden">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-green/10 rounded-full border border-brand-green/20">
               <Zap size={14} className="text-brand-green" />
-              <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-green">Fluxo de Alta Performance</span>
+              <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-green">Como funciona</span>
             </div>
             <h2 className="text-4xl md:text-7xl font-black text-white leading-none tracking-tight">
-              4 passos para sua <br />
-              <span className="text-brand-green">liberdade comercial.</span>
+              Em 4 passos. <br />
+              <span className="text-brand-green">Sem burocracia.</span>
             </h2>
           </div>
           <p className="text-slate-400 text-lg md:text-xl font-medium max-w-sm leading-relaxed border-l-2 border-brand-green/30 pl-6 reveal-hidden delay-200">
-            Um processo refinado para entregar o máximo de resultado no menor tempo possível.
+            Sem reunião de uma hora. Sem formulário gigante. Você manda as infos, a gente faz o trabalho.
           </p>
         </div>
 
@@ -68,15 +72,20 @@ export const HowItWorks: React.FC = () => {
                 </div>
 
                 <h3 className="text-2xl md:text-3xl font-black text-white mb-6 group-hover:text-brand-green transition-colors duration-500 tracking-tight">{step.title}</h3>
-                <p className="text-slate-400 font-medium leading-relaxed group-hover:text-slate-200 transition-colors duration-500 mb-10">
+                <p className="text-slate-400 font-medium leading-relaxed group-hover:text-slate-200 transition-colors duration-500 mb-4">
                   {step.description}
                 </p>
+                <div className="flex items-center gap-2 mb-10">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-brand-green/60 bg-brand-green/10 border border-brand-green/20 px-2.5 py-1 rounded-full">
+                    ⏱ {step.time}
+                  </span>
+                </div>
 
                 <button
                   onClick={() => window.open('https://wa.me/5551984689725', '_blank')}
                   className="mt-auto group/btn flex items-center gap-3 px-8 py-4 bg-white/5 hover:bg-brand-green text-white hover:text-slate-950 rounded-2xl transition-all duration-500 border border-white/10 hover:border-brand-green text-[10px] font-black uppercase tracking-[.25em]"
                 >
-                  Saiba Mais
+                  Tirar dúvida
                   <ChevronRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
                 </button>
               </div>

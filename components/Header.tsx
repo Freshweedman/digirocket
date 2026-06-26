@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Rocket, ArrowRight, Zap } from 'lucide-react';
+import { Menu, X, Rocket, ArrowRight, Zap, MessageCircle } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,13 +35,13 @@ export const Header: React.FC = () => {
           </div>
 
           <span className="text-brand-green">
-            ATENDIMENTO HUMANIZADO
+            ATENDIMENTO HUMANO
           </span>
           <span className="text-white opacity-40">
             ·
           </span>
           <span className="text-white">
-            ENTREGA EM 48H · #1 NO GOOGLE
+            PRONTO EM 48H · #1 NO GOOGLE
           </span>
         </div>
       </div>
@@ -76,11 +76,21 @@ export const Header: React.FC = () => {
                 </a>
               ))}
 
+              <a
+                href="https://wa.me/5551984689725?text=Olá, quero falar com a DigiRocket sobre meu projeto."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 px-5 py-3 rounded-full font-black text-[11px] uppercase tracking-tight text-emerald-700 border-2 border-emerald-500/30 hover:border-emerald-500 hover:bg-emerald-500 hover:text-white transition-all"
+              >
+                <MessageCircle size={14} className="text-emerald-500 fill-emerald-500 group-hover:text-white group-hover:fill-white transition-colors" />
+                Fale Conosco
+              </a>
+
               <button
                 onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
                 className="bg-[#0f172a] hover:bg-slate-950 text-white px-8 py-4 rounded-full font-black text-[12px] transition-all shadow-xl hover:scale-105 flex items-center gap-3 group uppercase tracking-tight border border-transparent shadow-slate-200"
               >
-                QUERO CRIAR MEU SITE AGORA
+                QUERO MEU SITE EM 48H
                 <Zap size={14} className="text-brand-green fill-brand-green group-hover:animate-pulse" />
               </button>
             </nav>
@@ -118,7 +128,17 @@ export const Header: React.FC = () => {
                   {item.label}
                 </a>
               ))}
-              <div className="pt-6">
+              <div className="pt-6 space-y-3">
+                <a
+                  href="https://wa.me/5551984689725?text=Olá, quero falar com a DigiRocket sobre meu projeto."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  className="w-full bg-emerald-500 text-white px-8 py-5 rounded-2xl font-black text-center shadow-xl active:scale-95 transition-transform flex justify-center items-center gap-3 uppercase tracking-tight"
+                >
+                  <MessageCircle size={18} className="fill-white" />
+                  Fale Conosco no WhatsApp
+                </a>
                 <button
                   onClick={() => {
                     setIsOpen(false);
@@ -126,7 +146,7 @@ export const Header: React.FC = () => {
                   }}
                   className="w-full bg-[#0f172a] text-white px-8 py-5 rounded-2xl font-black text-center shadow-xl active:scale-95 transition-transform flex justify-center items-center gap-3 uppercase tracking-tight"
                 >
-                  QUERO CRIAR MEU SITE AGORA
+                  QUERO MEU SITE EM 48H
                   <Zap size={20} className="text-brand-green fill-brand-green" />
                 </button>
               </div>

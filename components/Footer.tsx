@@ -21,8 +21,8 @@ export const Footer: React.FC = () => {
             </span>
           </div>
           <p className="text-lg text-slate-400 leading-relaxed font-medium">
-            Sua máquina de vendas para negócios locais. <br />
-            <span className="text-white font-bold italic drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">Design premium, lucro real.</span>
+            O site que coloca seu negócio no Google <br />
+            <span className="text-white font-bold italic drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">e faz o cliente chegar no WhatsApp.</span>
           </p>
           <div className="flex gap-4">
             {[
@@ -78,7 +78,7 @@ export const Footer: React.FC = () => {
               <div className="p-3 bg-white/5 border border-white/10 rounded-xl text-brand-green">
                 <MapPin size={18} />
               </div>
-              Porto Alegre, RS
+              Porto Alegre, RS — Atendemos todo o Brasil
             </li>
           </ul>
         </div>
@@ -103,10 +103,10 @@ export const Footer: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto mt-24 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[11px] font-black uppercase tracking-[0.4em] text-slate-600">
-        <span className="text-center md:text-left leading-relaxed">© 2025 DIGIROCKET. ESTRUTURA PARA ALTA PERFORMANCE.</span>
+        <span className="text-center md:text-left leading-relaxed">© 2026 DIGIROCKET · Sites em 48h pra todo o Brasil</span>
         <div className="flex gap-10">
           <a href="#" className="hover:text-brand-green transition-colors">Privacidade</a>
-          <a href="#" className="hover:text-brand-green transition-colors">Vendas</a>
+          <a href="#cidades" className="hover:text-brand-green transition-colors">Cidades</a>
           <a href="#" className="hover:text-brand-green transition-colors">Termos</a>
         </div>
       </div>

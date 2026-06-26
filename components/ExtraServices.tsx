@@ -1,382 +1,246 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
-  Search, Globe, Instagram, Sparkles, FastForward, Palette,
-  PenTool, CheckCircle2, Megaphone, Bot, Video, Compass, Smartphone, MonitorSmartphone,
-  Target, Rocket, ArrowRight, ShieldCheck, Zap
+  MonitorSmartphone, Megaphone, Instagram, Bot, Video, Compass,
+  CheckCircle2, Sparkles, ShieldCheck, Rocket, Target, MessageCircle
 } from 'lucide-react';
 
 type Service = {
+  id: string;
   icon: React.ComponentType<{ size?: number; className?: string; strokeWidth?: number }>;
   title: string;
   badge: string;
-  pain: string;
   desc: string;
-  features: string[];
-  ctaLabel: string;
-  ctaMessage: string;
+  price: string;
   highlight?: boolean;
 };
 
 const services: Service[] = [
   {
-    icon: Instagram,
-    title: 'Gestão de Mídias Sociais',
-    badge: 'Presença Digital',
-    pain: 'Cansado de não saber o que postar e ver seu perfil parado enquanto o concorrente cresce?',
-    desc: 'Cuidamos do seu Instagram, TikTok e Facebook com estratégia, copy e arte. Conteúdo autêntico que vira venda.',
-    features: [
-      'Personalização completa do perfil',
-      'Criação de legendas e copy',
-      'Artes profissionais (8 a 16 posts/mês)',
-      'Roteiros, gravação e edição de Reels',
-      'Postagem programada automática',
-      'Aprovação prévia em painel exclusivo',
-    ],
-    ctaLabel: 'Quero gerenciar',
-    ctaMessage: 'Olá, quero gerenciar minhas redes sociais com a DigiRocket.',
+    id: 'site',
+    icon: MonitorSmartphone,
+    title: 'Site Profissional',
+    badge: 'Presença Online',
+    desc: 'Seu negócio precisa de um endereço na internet. Site responsivo, rápido e com SEO.',
+    price: 'a partir de R$ 497',
   },
   {
+    id: 'trafego',
     icon: Megaphone,
-    title: 'Gestão de Tráfego Pago',
-    badge: 'Campanhas Estratégicas',
-    pain: 'Cansado de jogar dinheiro fora em anúncios que não vendem nada?',
-    desc: 'Anúncios no Google, Meta (Facebook/Instagram) e TikTok com otimização diária e foco em ROI real.',
-    features: [
-      'Configuração completa de campanhas',
-      'Estratégia personalizada por nicho',
-      'Otimizações diárias de performance',
-      'Relatórios semanais detalhados',
-      'Análise de ROI e CAC',
-      'Gestão profissional do orçamento',
-      'Suporte contínuo e ajustes',
-    ],
-    ctaLabel: 'Quero vender mais',
-    ctaMessage: 'Olá, quero contratar gestão de tráfego pago com a DigiRocket.',
+    title: 'Tráfego Pago',
+    badge: 'Venda Mais',
+    desc: 'Anúncios no Google e Meta que trazem cliente pronto pra comprar, não só visualização.',
+    price: 'a partir de R$ 797/mês',
     highlight: true,
   },
   {
+    id: 'social',
+    icon: Instagram,
+    title: 'Gestão de Redes',
+    badge: 'Presença Digital',
+    desc: 'Cuida do Instagram e TikTok com post, legenda e arte. Você só aprova.',
+    price: 'a partir de R$ 497/mês',
+  },
+  {
+    id: 'whatsapp',
     icon: Bot,
-    title: 'Automação WhatsApp',
-    badge: 'Atendimento 24h',
-    pain: 'Cansado de perder cliente por não responder a tempo? Ou de atender o WhatsApp na madrugada?',
-    desc: 'Transforme seu WhatsApp Business em uma central de vendas que atende sozinha enquanto você dorme.',
-    features: [
-      'Configuração do WhatsApp Business',
-      'Fluxo de atendimento automatizado',
-      'Respostas rápidas personalizadas',
-      'Organização e qualificação de leads',
-      'Agendamento de reuniões automático',
-      'Follow-up programado',
-      'Relatórios de atendimento',
-    ],
-    ctaLabel: 'Automatizar agora',
-    ctaMessage: 'Olá, quero automatizar meu WhatsApp Business.',
+    title: 'WhatsApp Automático',
+    badge: 'Atende 24h',
+    desc: 'Atende cliente sozinho, dia e noite. Você não perde venda nem nas férias.',
+    price: 'a partir de R$ 297/mês',
   },
   {
-    icon: MonitorSmartphone,
-    title: 'Desenvolvimento de Sites',
-    badge: 'Presença Profissional',
-    pain: 'Cansado de não parecer profissional no digital e perder venda pra quem tem site?',
-    desc: 'Sites institucionais, landing pages e e-commerce com design moderno, SEO técnico e velocidade de elite.',
-    features: [
-      'Design responsivo (mobile-first)',
-      'SEO técnico on-page',
-      'Integração com redes sociais',
-      'Formulários e captação de leads',
-      'Painel administrativo simples',
-      'Hospedagem e domínio inclusos',
-      'Suporte técnico contínuo',
-    ],
-    ctaLabel: 'Quero meu site',
-    ctaMessage: 'Olá, quero criar meu site com a DigiRocket.',
-  },
-  {
+    id: 'video',
     icon: Video,
-    title: 'Produção de Vídeos',
-    badge: 'Conteúdo Audiovisual',
-    pain: 'Cansado de gravar reels que ninguém vê e parecer amador na frente da câmera?',
-    desc: 'Reels, VSLs e vídeos institucionais com roteiro, gravação e edição. Pensados para vender, não só para encantar.',
-    features: [
-      'Roteiro persuasivo personalizado',
-      'Gravação profissional',
-      'Edição com cortes dinâmicos',
-      'Trilha sonora licenciada',
-      'Legendas e textos animados',
-      'Adaptação para todas as plataformas',
-    ],
-    ctaLabel: 'Produzir vídeos',
-    ctaMessage: 'Olá, quero produzir vídeos com a DigiRocket.',
+    title: 'Produção de Vídeo',
+    badge: 'Conteúdo',
+    desc: 'Reels e vídeos com roteiro, gravação e edição. Feito pra vender, não só pra encantar.',
+    price: 'a partir de R$ 397',
   },
   {
+    id: 'consultoria',
     icon: Compass,
-    title: 'Consultoria Digital',
-    badge: 'Planejamento Estratégico',
-    pain: 'Cansado de tentar tudo no escuro e não saber o que realmente funciona pro seu negócio?',
-    desc: 'Diagnóstico completo do seu negócio digital com plano de ação mensal e acompanhamento próximo.',
-    features: [
-      'Análise da concorrência',
-      'Definição de público-alvo',
-      'Planejamento estratégico 360°',
-      'Cronograma de execução',
-      'Definição de métricas e KPIs',
-      'Acompanhamento mensal',
-    ],
-    ctaLabel: 'Quero consultoria',
-    ctaMessage: 'Olá, quero uma consultoria estratégica com a DigiRocket.',
-  },
-];
-
-const upgrades = [
-  {
-    icon: Search,
-    title: 'SEO + Google Maps',
-    features: ['Otimização do perfil', 'Cadastro de produtos', 'Gestão de fotos', 'Meta: Top 1 no Maps'],
-  },
-  {
-    icon: Palette,
-    title: 'Identidade Visual',
-    features: ['Paleta de cores', 'Tipografia', 'Social Media Kit', 'Brand Book'],
-  },
-  {
-    icon: PenTool,
-    title: 'Logo Profissional',
-    features: ['Design exclusivo', 'Vetor (alta resolução)', 'Manual da marca', 'Entrega expressa'],
-  },
-  {
-    icon: FastForward,
-    title: 'Velocidade Máxima',
-    features: ['Otimização de imagens', 'Cache avançado', 'CDN global', 'LCP < 1.0s'],
-  },
-  {
-    icon: Smartphone,
-    title: 'Landing p/ Ads',
-    features: ['Página de campanha', 'Pixel + Tags', 'Foco em conversão', 'Teste A/B'],
-  },
-  {
-    icon: Globe,
-    title: 'Domínio + E-mail Pro',
-    features: ['Domínio .com.br', 'E-mails @suaempresa', 'Configuração DNS', 'SSL incluso'],
+    title: 'Consultoria',
+    badge: 'Estratégia',
+    desc: 'Diagnóstico do seu negócio + plano de ação. Pra você saber exatamente o que fazer.',
+    price: 'a partir de R$ 497',
   },
 ];
 
 const whatsappBase = 'https://wa.me/5551984689725';
 
 export const ExtraServices: React.FC = () => {
-  const open = (msg: string) =>
-    window.open(`${whatsappBase}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
+  const [selectedServices, setSelectedServices] = useState<string[]>([]);
+
+  const toggleService = (id: string) => {
+    setSelectedServices(prev =>
+      prev.includes(id) ? prev.filter(s => s !== id) : [...prev, id]
+    );
+  };
+
+  const sendToWhatsApp = () => {
+    if (selectedServices.length === 0) {
+      window.open(`${whatsappBase}?text=${encodeURIComponent('Olá! Quero saber mais sobre os serviços da DigiRocket.')}`, '_blank');
+      return;
+    }
+
+    const selectedNames = services
+      .filter(s => selectedServices.includes(s.id))
+      .map(s => `• ${s.title}`)
+      .join('\n');
+
+    const message = `Olá! Quero contratar os seguintes serviços:\n\n${selectedNames}\n\nPode me enviar mais informações?`;
+    window.open(`${whatsappBase}?text=${encodeURIComponent(message)}`, '_blank');
+  };
 
   return (
-    <section id="servicos" className="py-24 md:py-32 px-4 bg-brand-dark relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-brand-green/5 blur-[120px] rounded-full pointer-events-none"></div>
+    <section id="servicos" className="py-20 md:py-28 px-4 bg-gradient-to-b from-zinc-950 to-black relative overflow-hidden">
+      {/* Background effects */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] bg-emerald-500/3 rounded-full blur-3xl" />
+      </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* HEADER */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14 md:mb-20 gap-8 reveal-hidden">
-          <div className="max-w-3xl space-y-5">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-green/15 rounded-full border border-brand-green/30">
-              <Sparkles size={14} className="text-brand-green" />
-              <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-green">Ecossistema 360°</span>
-            </div>
-            <h2 className="font-sans text-3xl md:text-6xl font-black text-white tracking-tight leading-[1.05]">
-              Soluções completas para <br />
-              <span className="text-brand-green">dominar o digital.</span>
-            </h2>
-            <p className="text-slate-400 text-base md:text-lg font-medium max-w-2xl leading-relaxed">
-              Site é só o começo. Aqui você tem tudo que precisa pra vender mais: tráfego, conteúdo, automação,
-              vídeo e estratégia. <span className="text-white font-bold">Tudo no mesmo lugar.</span>
-            </p>
+        <div className="text-center mb-14 md:mb-20">
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-500/10 rounded-full border border-emerald-500/20 mb-8">
+            <Sparkles size={18} className="text-emerald-400" />
+            <span className="text-sm font-bold text-emerald-400 uppercase tracking-wider">Outros Serviços</span>
           </div>
-
-          <div className="flex flex-col gap-3 md:items-end">
-            <div className="flex items-center gap-3 text-white/80">
-              <div className="flex">
-                {['A', 'B', 'C'].map((l, i) => (
-                  <div
-                    key={l}
-                    className="w-9 h-9 rounded-full bg-gradient-to-br from-brand-green to-emerald-500 border-2 border-brand-dark flex items-center justify-center font-black text-slate-950 text-xs"
-                    style={{ marginLeft: i > 0 ? '-10px' : 0 }}
-                  >
-                    {l}
-                  </div>
-                ))}
-              </div>
-              <span className="text-[10px] md:text-xs font-black uppercase tracking-widest">+200 projetos entregues</span>
-            </div>
-            <div className="flex items-center gap-2 text-brand-green text-[10px] md:text-xs font-black uppercase tracking-widest">
-              <ShieldCheck size={14} /> 5 anos de mercado
-            </div>
-          </div>
-        </div>
-
-        {/* MAIN SERVICES GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-20">
-          {services.map((s, idx) => (
-            <article
-              key={s.title}
-              className={`group relative p-7 md:p-8 rounded-3xl border transition-all duration-500 flex flex-col reveal-hidden overflow-hidden hover:-translate-y-2 ${
-                s.highlight
-                  ? 'bg-gradient-to-br from-brand-green/15 via-slate-900/60 to-slate-900/40 border-brand-green/40 shadow-[0_0_60px_rgba(163,230,53,0.08)]'
-                  : 'bg-slate-900/50 backdrop-blur-xl border-white/5 hover:border-brand-green/40'
-              }`}
-              style={{ transitionDelay: `${idx * 80}ms` }}
-            >
-              {s.highlight && (
-                <div className="absolute top-5 right-5 bg-brand-green text-slate-950 px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-[0.25em] shadow-[0_0_20px_rgba(163,230,53,0.4)]">
-                  Mais procurado
-                </div>
-              )}
-
-              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-green/10 blur-3xl rounded-full translate-x-10 -translate-y-10 group-hover:bg-brand-green/30 transition-colors opacity-30"></div>
-
-              <div className="mb-6 inline-flex p-3.5 rounded-2xl bg-slate-950/60 text-brand-green border border-white/5 self-start group-hover:bg-brand-green group-hover:text-slate-950 transition-all">
-                <s.icon size={24} strokeWidth={1.6} />
-              </div>
-
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-green/70 mb-2">{s.badge}</span>
-              <h3 className="text-xl md:text-2xl font-black text-white mb-3 leading-tight">{s.title}</h3>
-              <p className="text-brand-green/90 italic font-medium text-xs md:text-sm leading-relaxed mb-3 border-l-2 border-brand-green/30 pl-3">
-                "{s.pain}"
-              </p>
-              <p className="text-slate-400 font-medium leading-relaxed mb-5 text-sm">{s.desc}</p>
-
-              <ul className="space-y-2.5 mb-6 flex-grow">
-                {s.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-slate-300 text-sm font-medium group/li">
-                    <CheckCircle2 size={14} className="text-brand-green shrink-0 mt-0.5" />
-                    <span className="group-hover/li:text-white transition-colors">{f}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="flex items-center justify-between gap-4 pt-5 border-t border-white/5">
-                <div>
-                  <p className="text-[9px] uppercase tracking-widest text-white/40 font-black mb-0.5">Investimento</p>
-                  <p className="text-white font-black text-sm leading-tight">Personalizado</p>
-                </div>
-                <button
-                  onClick={() => open(s.ctaMessage)}
-                  className="bg-brand-green text-slate-950 px-4 py-2.5 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-white transition-all shadow-[0_0_20px_rgba(163,230,53,0.25)] flex items-center gap-2 shrink-0"
-                >
-                  {s.ctaLabel}
-                  <ArrowRight size={12} />
-                </button>
-              </div>
-            </article>
-          ))}
-        </div>
-
-        {/* COMBO HIGHLIGHT */}
-        <div className="mb-20 rounded-3xl border border-brand-green/30 bg-gradient-to-br from-brand-green/10 via-slate-900/60 to-slate-900/40 p-8 md:p-12 relative overflow-hidden reveal-hidden">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-brand-green/15 blur-[120px] rounded-full"></div>
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-            <div className="lg:col-span-2 space-y-5">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-green text-slate-950 rounded-full text-[10px] font-black uppercase tracking-[0.3em]">
-                <Zap size={12} fill="currentColor" />
-                Combo Acelerador
-              </div>
-              <h3 className="text-2xl md:text-4xl font-black text-white leading-tight tracking-tight">
-                Site + Tráfego Pago + Automação WhatsApp.
-                <br />
-                <span className="text-brand-green">Tudo integrado, do clique à venda.</span>
-              </h3>
-              <p className="text-slate-300 text-sm md:text-base font-medium max-w-2xl">
-                A estrutura completa para transformar visitantes em clientes pagantes. Estratégia única, equipe única,
-                resultado real. Plano sob medida pro tamanho do seu negócio.
-              </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                {['Setup em 7 dias', 'Sem fidelidade', 'Suporte VIP', 'Relatórios reais'].map((t) => (
-                  <span
-                    key={t}
-                    className="text-[10px] font-black uppercase tracking-widest text-white/70 bg-white/5 border border-white/10 rounded-full px-3 py-1.5"
-                  >
-                    {t}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="bg-slate-950/70 border border-white/10 rounded-2xl p-6 backdrop-blur">
-                <p className="text-[10px] uppercase tracking-[0.3em] text-white/40 font-black mb-2">Investimento</p>
-                <div className="text-white text-2xl md:text-3xl font-black tracking-tight leading-none">Sob consulta</div>
-                <p className="text-slate-400 text-xs mt-2 font-medium">Estratégia desenhada pro seu nicho e meta de vendas</p>
-              </div>
-              <button
-                onClick={() => open('Olá, quero contratar o Combo Acelerador (site + tráfego + automação).')}
-                className="w-full bg-brand-green text-slate-950 py-4 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-white transition-all shadow-[0_0_40px_rgba(163,230,53,0.3)] flex items-center justify-center gap-3"
-              >
-                <Rocket size={16} /> Quero o combo completo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* UPGRADES */}
-        <div className="pt-12 border-t border-white/5">
-          <div className="mb-12 reveal-hidden flex flex-col md:flex-row md:items-end justify-between gap-5">
-            <div>
-              <h3 className="text-2xl md:text-4xl font-black text-white tracking-tight mb-3">Upgrades sob demanda</h3>
-              <p className="text-slate-400 font-bold text-xs md:text-sm uppercase tracking-widest">
-                Turbine sua estrutura ponto a ponto
-              </p>
-            </div>
-            <div className="text-slate-400 text-sm max-w-md">
-              Adicione qualquer item ao seu plano principal. Ativação imediata.
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-            {upgrades.map((up, i) => (
-              <div
-                key={up.title}
-                className="group relative bg-[#0f172a]/40 backdrop-blur-xl p-7 rounded-2xl border border-white/5 hover:border-brand-green/50 transition-all duration-500 flex flex-col justify-between reveal-hidden overflow-hidden hover:-translate-y-1"
-                style={{ transitionDelay: `${i * 60}ms` }}
-              >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-brand-green/15 blur-3xl rounded-full translate-x-10 -translate-y-10 group-hover:bg-brand-green/30 transition-colors opacity-20"></div>
-
-                <div>
-                  <div className="mb-6">
-                    <div className="inline-flex p-3.5 bg-slate-900 rounded-2xl text-brand-green border border-white/5 group-hover:bg-brand-green group-hover:text-slate-950 transition-all">
-                      <up.icon size={22} strokeWidth={1.6} />
-                    </div>
-                  </div>
-
-                  <h4 className="text-base md:text-lg font-black text-white mb-4 uppercase tracking-widest leading-tight">
-                    {up.title}
-                  </h4>
-
-                  <ul className="space-y-2.5 mb-8">
-                    {up.features.map((f) => (
-                      <li key={f} className="flex items-center gap-2.5 text-slate-400 font-medium text-sm group/li">
-                        <div className="w-1.5 h-1.5 rounded-full bg-brand-green/40 group-hover/li:bg-brand-green transition-colors"></div>
-                        <span className="group-hover/li:text-white transition-colors">{f}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <button
-                  onClick={() => open(`Olá, quero ativar o upgrade: ${up.title}.`)}
-                  className="w-full bg-white/5 text-white/80 py-3.5 rounded-xl font-black text-[10px] uppercase tracking-widest group-hover:bg-brand-green group-hover:text-slate-950 transition-all border border-white/10 group-hover:border-transparent flex items-center justify-center gap-2"
-                >
-                  Pedir orçamento
-                  <FastForward size={12} className="group-hover:translate-x-1 transition-transform" />
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* FINAL CTA */}
-        <div className="mt-20 text-center reveal-hidden">
-          <p className="text-slate-400 text-base md:text-lg font-medium max-w-2xl mx-auto mb-6">
-            Não sabe por onde começar? Conte seu desafio e a gente desenha a estratégia ideal pro seu negócio.
+          <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+            Além do site,<br className="md:hidden" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">fazemos tudo</span>
+          </h2>
+          <p className="text-zinc-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+            Do logo ao vídeo, do Instagram ao Google Ads. <br className="hidden md:block" />
+            <span className="text-white font-bold">Seu negócio completo no digital.</span>
           </p>
-          <button
-            onClick={() => open('Olá, quero conversar sobre uma estratégia digital pro meu negócio.')}
-            className="inline-flex items-center gap-3 bg-white text-slate-950 px-9 py-4 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-brand-green transition-all shadow-2xl"
-          >
-            <Target size={16} /> Quero minha estratégia
-          </button>
+        </div>
+
+        {/* SERVICES GRID */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
+          {services.map((s) => {
+            const isSelected = selectedServices.includes(s.id);
+            
+            return (
+              <button
+                key={s.id}
+                onClick={() => toggleService(s.id)}
+                className={`group relative p-7 md:p-8 rounded-3xl border-2 transition-all duration-300 text-left overflow-hidden ${
+                  isSelected
+                    ? 'bg-gradient-to-br from-emerald-500/20 via-emerald-500/10 to-transparent border-emerald-500 shadow-2xl shadow-emerald-500/30 scale-[1.02]'
+                    : s.highlight
+                    ? 'bg-zinc-900 border-emerald-500/40 hover:border-emerald-500 hover:shadow-xl hover:shadow-emerald-500/20'
+                    : 'bg-zinc-900/60 backdrop-blur-xl border-zinc-800 hover:border-zinc-700 hover:bg-zinc-900'
+                }`}
+              >
+                {/* Background gradient effect */}
+                <div className={`absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${isSelected ? 'opacity-100' : ''}`} />
+                
+                {/* Most Popular Badge */}
+                {s.highlight && !isSelected && (
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500 text-zinc-950 px-5 py-1.5 rounded-full text-[10px] font-black uppercase tracking-wider shadow-lg shadow-emerald-500/50 animate-pulse">
+                    Mais Pedido
+                  </div>
+                )}
+
+                {/* Selected Checkmark */}
+                {isSelected && (
+                  <div className="absolute top-5 right-5 w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg shadow-emerald-500/50 animate-in zoom-in duration-300">
+                    <CheckCircle2 size={18} className="text-zinc-950" strokeWidth={3} />
+                  </div>
+                )}
+
+                {/* Icon */}
+                <div className={`relative mb-6 inline-flex p-4 rounded-2xl transition-all duration-300 ${
+                  isSelected
+                    ? 'bg-emerald-500 text-zinc-950 shadow-xl shadow-emerald-500/40'
+                    : 'bg-zinc-800 text-emerald-400 group-hover:bg-emerald-500/10 group-hover:text-emerald-300 group-hover:scale-110'
+                }`}>
+                  <s.icon size={28} strokeWidth={2} />
+                </div>
+
+                {/* Content */}
+                <div className="relative">
+                  {/* Badge */}
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-400/80 block mb-3">
+                    {s.badge}
+                  </span>
+
+                  {/* Title */}
+                  <h3 className="text-xl md:text-2xl font-black text-white mb-4 leading-tight">
+                    {s.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed mb-6">
+                    {s.desc}
+                  </p>
+                  
+                  {/* Price */}
+                  <div className="pt-5 border-t border-zinc-800">
+                    <p className="text-white font-black text-base md:text-lg">
+                      {s.price}
+                    </p>
+                  </div>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* CTA SECTION */}
+        <div className="bg-gradient-to-br from-emerald-500/10 via-emerald-500/5 to-transparent border-2 border-emerald-500/30 rounded-3xl p-10 md:p-14 text-center backdrop-blur-xl shadow-2xl shadow-emerald-500/20">
+          <div className="max-w-3xl mx-auto">
+            <div className="mb-6">
+              {selectedServices.length > 0 ? (
+                <>
+                  <div className="inline-flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg shadow-emerald-500/50">
+                      <span className="text-zinc-950 font-black text-xl">{selectedServices.length}</span>
+                    </div>
+                    <h3 className="text-3xl md:text-4xl font-black text-white">
+                      {selectedServices.length === 1 ? 'Serviço Selecionado' : 'Serviços Selecionados'}
+                    </h3>
+                  </div>
+                  <p className="text-zinc-300 text-base md:text-lg leading-relaxed">
+                    Clique no botão abaixo e vamos conversar sobre seu projeto no WhatsApp
+                  </p>
+                </>
+              ) : (
+                <>
+                  <h3 className="text-3xl md:text-4xl font-black text-white mb-4">
+                    Selecione os serviços que precisa
+                  </h3>
+                  <p className="text-zinc-300 text-base md:text-lg leading-relaxed">
+                    Ou clique direto no botão pra conversar com a gente
+                  </p>
+                </>
+              )}
+            </div>
+            
+            <button
+              onClick={sendToWhatsApp}
+              className="group inline-flex items-center gap-4 bg-gradient-to-r from-emerald-500 to-emerald-400 hover:from-emerald-400 hover:to-emerald-300 text-zinc-950 px-10 py-5 rounded-2xl font-black text-base uppercase tracking-wider transition-all shadow-2xl shadow-emerald-500/40 hover:scale-105 active:scale-95"
+            >
+              <MessageCircle size={24} strokeWidth={2.5} className="group-hover:rotate-12 transition-transform" />
+              {selectedServices.length > 0 ? 'Falar no WhatsApp' : 'Quero Contratar'}
+            </button>
+          </div>
+        </div>
+
+        {/* TRUST BADGES */}
+        <div className="mt-14 flex flex-wrap items-center justify-center gap-8 md:gap-12">
+          {[
+            { icon: ShieldCheck, text: '5 anos no mercado' },
+            { icon: Rocket, text: '+200 projetos' },
+            { icon: Target, text: 'Foco em resultado' }
+          ].map((badge, i) => (
+            <div key={i} className="flex items-center gap-3 text-zinc-500 hover:text-emerald-400 transition-colors group">
+              <badge.icon size={20} className="text-emerald-400 group-hover:scale-110 transition-transform" />
+              <span className="text-sm md:text-base font-bold">{badge.text}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

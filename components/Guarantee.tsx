@@ -20,7 +20,7 @@ export const Guarantee: React.FC = () => {
               <ShieldCheck size={120} className="text-brand-green relative z-10 drop-shadow-[0_0_20px_rgba(163,230,53,0.4)]" strokeWidth={1} />
 
               <div className="absolute -bottom-2 -right-2 bg-brand-green text-slate-950 px-6 py-4 rounded-3xl shadow-2xl font-black text-[10px] uppercase tracking-[0.3em] z-20 hidden md:block border-4 border-slate-900">
-                Risco Zero
+                Sem risco
               </div>
             </div>
           </div>
@@ -29,14 +29,14 @@ export const Guarantee: React.FC = () => {
         <div className="space-y-8 flex-grow xl:pl-10 reveal-hidden delay-100">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-green/10 rounded-full border border-brand-green/20">
             <CheckCircle2 size={16} className="text-brand-green" />
-            <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-green">Satisfação Blindada</span>
+            <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-brand-green">100% garantido</span>
           </div>
           <h2 className="font-sans text-4xl md:text-7xl font-black text-slate-900 leading-none tracking-tight">
-            Garantia Risco Zero <br />
-            <span className="text-brand-green">Você só paga se amar.</span>
+            Não gostou? <br />
+            <span className="text-brand-green">Dinheiro de volta.</span>
           </h2>
           <p className="text-slate-500 text-lg md:text-2xl leading-relaxed font-medium max-w-3xl">
-            Se em <span className="font-black text-slate-900 decoration-brand-green decoration-4 underline underline-offset-8">7 dias</span> você não estiver absolutamente satisfeito com a sua nova estrutura, devolvemos 100% do seu investimento. Zero burocracia. <strong className="text-slate-900">A DigiRocket assume todo o risco por você.</strong>
+            <span className="font-black text-slate-900 decoration-brand-green decoration-4 underline underline-offset-8">7 dias</span> pra testar. Não curtiu? É só falar. <strong className="text-slate-900">Devolvemos 100%. Zero burocracia.</strong>
           </p>
         </div>
       </div>

@@ -1,5 +1,16 @@
+# robots.txt - DigiRocket
+# Permite indexação de todas as páginas SEO
+
 User-agent: *
 Allow: /
-Disallow: /api/
 
+# Sitemap
 Sitemap: https://www.digirocket.site/sitemap.xml
+
+# Disallow admin (não existe, mas previne scan)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# Crawl delay (opcional, evita sobrecarga)
+Crawl-delay: 1

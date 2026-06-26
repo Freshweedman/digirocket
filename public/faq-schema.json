@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanto custa criar um site profissional?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nossos sites começam em R$497 (pagamento único, sem mensalidade). Esse valor inclui: design profissional, hospedagem grátis no primeiro ano, integração com WhatsApp, otimização para Google (SEO básico) e entrega em até 48 horas. Temos também o pacote Premium por R$997 com recursos avançados como sistema de agendamento, catálogo de produtos e automação de WhatsApp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Em quanto tempo o site fica pronto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Seu site fica pronto em até 48 horas após a aprovação do briefing e envio do conteúdo (textos, fotos, logo). Se demorar mais que isso, devolvemos 100% do seu dinheiro. Trabalhamos rápido porque usamos templates otimizados e testados em centenas de negócios."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O site vai aparecer no Google?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim! Todos os nossos sites são otimizados para SEO (Search Engine Optimization). Isso significa que configuramos tudo certinho para o Google encontrar e indexar seu site. Geralmente leva de 7 a 30 dias para começar a aparecer nas buscas. Para acelerar ainda mais, oferecemos serviço de tráfego pago (Google Ads) que coloca seu site no topo imediatamente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Preciso pagar mensalidade?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não! O valor que você paga é único. A hospedagem do primeiro ano é grátis. Depois disso, você pode renovar a hospedagem por apenas R$97/ano (opcional) ou migrar o site para onde quiser - o site é 100% seu. Não tem pegadinha, não tem taxa escondida."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vocês atendem em qual região?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Atendemos todo o Brasil! Nosso atendimento é 100% remoto pelo WhatsApp. Já criamos sites para clientes de Porto Alegre, São Paulo, Rio de Janeiro, Belo Horizonte, Curitiba e dezenas de outras cidades. Não importa onde você está - se tem internet, a gente atende."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer alterações no site depois?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim! Você tem 7 dias de garantia com revisões ilimitadas. Depois desse período, cobramos R$97 por hora para alterações. Mas a maioria dos clientes não precisa mexer em nada porque entregamos o site exatamente como combinado. Se preferir, também oferecemos planos de manutenção mensal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O site funciona no celular?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim! Todos os nossos sites são responsivos, ou seja, se adaptam perfeitamente para celular, tablet e computador. Mais de 70% dos acessos vêm do celular, então isso é obrigatório. Testamos em diversos dispositivos antes de entregar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vocês criam o conteúdo do site?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim! Criamos todos os textos persuasivos do seu site. Você só precisa nos passar informações básicas sobre seu negócio (o que vende, diferenciais, localização, contato). Se tiver fotos próprias, ótimo! Se não tiver, usamos bancos de imagens profissionais. Logo também criamos se você não tiver."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tem garantia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim! Oferecemos 7 dias de garantia incondicional. Se você não gostar do site por qualquer motivo, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. Também garantimos que o site ficará no ar sem problemas técnicos - se cair, resolvemos em até 2 horas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a diferença entre o plano Básico e Premium?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O plano Básico (R$497) é uma landing page de alta conversão - perfeita para capturar leads e direcionar para o WhatsApp. O plano Premium (R$997) é um site completo com múltiplas páginas, sistema de agendamento ou catálogo de produtos, automação de WhatsApp, integração com redes sociais e relatórios de visitas. Recomendamos o Premium para quem quer uma máquina de vendas completa."
+      }
+    }
+  ]
+}
