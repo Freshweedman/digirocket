@@ -13,7 +13,7 @@ type Service = {
 const stats = [
   { value: '5+', suffix: 'anos', label: 'Cuidando de cliente todo dia', icon: Calendar },
   { value: '200+', suffix: 'sites', label: 'No ar e funcionando', icon: Rocket },
-  { value: '#1', suffix: 'Google', label: 'Pra quem busca site em POA', icon: Award },
+  { value: 'POA', suffix: 'Base', label: 'Porto Alegre, atende Brasil todo', icon: Award },
 ];
 
 export const Team: React.FC = () => {

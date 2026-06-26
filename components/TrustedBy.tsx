@@ -11,7 +11,7 @@ const stats = [
   { value: '200+', label: 'Sites no ar', icon: Rocket },
   { value: '5+', label: 'Anos', icon: Star },
   { value: '24%', label: 'Conversão', icon: TrendingUp },
-  { value: '#1', label: 'Google POA', icon: Trophy },
+  { value: 'RS', label: 'Porto Alegre', icon: Trophy },
 ];
 
 export const TrustedBy: React.FC = () => {

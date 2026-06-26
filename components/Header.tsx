@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
             ·
           </span>
           <span className="text-white">
-            PRONTO EM 48H · #1 NO GOOGLE
+            PRONTO EM 48H · R$497
           </span>
         </div>
       </div>

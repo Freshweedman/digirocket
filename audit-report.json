@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-06-26T16:51:34.676Z",
+  "timestamp": "2026-06-26T17:07:53.848Z",
   "summary": {
     "sitemapUrls": 402,
     "prerenderredPages": 388,
     "pagesAnalyzed": 50,
-    "totalIssues": 103,
-    "qualityScore": -106
+    "totalIssues": 101,
+    "qualityScore": -102
   },
   "issues": {
     "missingFromPrerender": 0,
     "missingFromSitemap": 0,
-    "duplicateTitles": 1,
-    "duplicateDescriptions": 1,
+    "duplicateTitles": 0,
+    "duplicateDescriptions": 0,
     "duplicateH1s": 1,
     "thinContent": 50,
     "missingCanonical": 0,
@@ -21,93 +21,47 @@
   "details": {
     "missingFromPrerender": [],
     "missingFromSitemap": [],
-    "duplicateTitlesExamples": [
-      [
-        "DigiRocket | Criação de Sites em Porto Alegre — R$497",
-        [
-          "criar-site",
-          "criar-site-aracaju",
-          "criar-site-belem",
-          "criar-site-belo-horizonte",
-          "criar-site-brasilia",
-          "criar-site-campinas",
-          "criar-site-campo-grande",
-          "criar-site-canoas",
-          "criar-site-caxias-do-sul",
-          "criar-site-cuiaba",
-          "criar-site-curitiba",
-          "criar-site-florianopolis",
-          "criar-site-fortaleza",
-          "criar-site-goiania",
-          "criar-site-gravatai",
-          "criar-site-guarulhos",
-          "criar-site-joao-pessoa",
-          "criar-site-joinville",
-          "criar-site-londrina",
-          "criar-site-maceio",
-          "criar-site-manaus",
-          "criar-site-maringa",
-          "criar-site-natal",
-          "criar-site-niteroi",
-          "criar-site-novo-hamburgo",
-          "criar-site-palmas",
-          "criar-site-pelotas",
-          "criar-site-porto-alegre",
-          "criar-site-porto-velho",
-          "criar-site-profissional",
-          "criar-site-recife",
-          "criar-site-rio-de-janeiro",
-          "criar-site-salvador",
-          "criar-site-santa-maria",
-          "criar-site-sao-bernardo-do-campo",
-          "criar-site-sao-luis",
-          "criar-site-sao-paulo",
-          "criar-site-teresina",
-          "criar-site-vitoria",
-          "/"
-        ]
-      ]
-    ],
+    "duplicateTitlesExamples": [],
     "thinContentExamples": [
       {
         "slug": "criar-site",
-        "chars": 376
+        "chars": 374
       },
       {
         "slug": "criar-site-aracaju",
-        "chars": 376
+        "chars": 372
       },
       {
         "slug": "criar-site-belem",
-        "chars": 376
+        "chars": 370
       },
       {
         "slug": "criar-site-belo-horizonte",
-        "chars": 376
+        "chars": 379
       },
       {
         "slug": "criar-site-brasilia",
-        "chars": 376
+        "chars": 373
       },
       {
         "slug": "criar-site-campinas",
-        "chars": 376
+        "chars": 373
       },
       {
         "slug": "criar-site-campo-grande",
-        "chars": 376
+        "chars": 377
       },
       {
         "slug": "criar-site-canoas",
-        "chars": 376
+        "chars": 371
       },
       {
         "slug": "criar-site-caxias-do-sul",
-        "chars": 376
+        "chars": 378
       },
       {
         "slug": "criar-site-cuiaba",
-        "chars": 376
+        "chars": 371
       }
     ],
     "exaggeratedClaims": [
