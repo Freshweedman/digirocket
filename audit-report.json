@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-26T16:48:02.624Z",
+  "timestamp": "2026-06-26T16:51:34.676Z",
   "summary": {
     "sitemapUrls": 402,
     "prerenderredPages": 388,
@@ -23,7 +23,7 @@
     "missingFromSitemap": [],
     "duplicateTitlesExamples": [
       [
-        "DigiRocket | Criação de Sites em Porto Alegre e Brasil · #1 no Google",
+        "DigiRocket | Criação de Sites em Porto Alegre — R$497",
         [
           "criar-site",
           "criar-site-aracaju",
@@ -64,60 +64,50 @@
           "criar-site-sao-paulo",
           "criar-site-teresina",
           "criar-site-vitoria",
-          "/",
-          "site-academia-belem",
-          "site-academia-belo-horizonte",
-          "site-academia-brasilia",
-          "site-academia-campinas",
-          "site-academia-curitiba",
-          "site-academia-fortaleza",
-          "site-academia-goiania",
-          "site-academia-guarulhos",
-          "site-academia-manaus",
-          "site-academia-porto-alegre"
+          "/"
         ]
       ]
     ],
     "thinContentExamples": [
       {
         "slug": "criar-site",
-        "chars": 392
+        "chars": 376
       },
       {
         "slug": "criar-site-aracaju",
-        "chars": 392
+        "chars": 376
       },
       {
         "slug": "criar-site-belem",
-        "chars": 392
+        "chars": 376
       },
       {
         "slug": "criar-site-belo-horizonte",
-        "chars": 392
+        "chars": 376
       },
       {
         "slug": "criar-site-brasilia",
-        "chars": 392
+        "chars": 376
       },
       {
         "slug": "criar-site-campinas",
-        "chars": 392
+        "chars": 376
       },
       {
         "slug": "criar-site-campo-grande",
-        "chars": 392
+        "chars": 376
       },
       {
         "slug": "criar-site-canoas",
-        "chars": 392
+        "chars": 376
       },
       {
         "slug": "criar-site-caxias-do-sul",
-        "chars": 392
+        "chars": 376
       },
       {
         "slug": "criar-site-cuiaba",
-        "chars": 392
+        "chars": 376
       }
     ],
     "exaggeratedClaims": [
