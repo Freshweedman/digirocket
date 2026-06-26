@@ -12,6 +12,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.join(__dirname, '..', 'dist');
 const indexHtml = fs.readFileSync(path.join(distDir, 'index.html'), 'utf-8');
 
+// Load metadata
+const metaDataPath = path.join(__dirname, '..', 'page-metadata.json');
+const pageMetadata = fs.existsSync(metaDataPath) 
+  ? JSON.parse(fs.readFileSync(metaDataPath, 'utf-8'))
+  : {};
+
 // Service slugs (20)
 const servicos = [
   'restaurante', 'barbearia', 'delivery', 'pizzaria', 'hamburgueria',
@@ -75,20 +81,84 @@ const slugs = [
   ...serviceCitySlugs
 ];
 
+// Function to inject custom metadata into HTML
+function injectMetadata(html, page) {
+  if (!page || !page.title) return html;
+  
+  // Escape special characters for regex
+  const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  
+  return html
+    // Title
+    .replace(
+      /<title>.*?<\/title>/,
+      `<title>${page.title}</title>`
+    )
+    // Meta description
+    .replace(
+      /<meta\s+name="description"\s+content="[^"]*"/,
+      `<meta name="description" content="${page.description}"`
+    )
+    // OG title
+    .replace(
+      /<meta\s+property="og:title"\s+content="[^"]*"/,
+      `<meta property="og:title" content="${page.title}"`
+    )
+    // OG description
+    .replace(
+      /<meta\s+property="og:description"\s+content="[^"]*"/,
+      `<meta property="og:description" content="${page.description}"`
+    )
+    // OG URL
+    .replace(
+      /<meta\s+property="og:url"\s+content="[^"]*"/,
+      `<meta property="og:url" content="https://www.digirocket.site/${page.slug}"`
+    )
+    // Canonical
+    .replace(
+      /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/,
+      `<link rel="canonical" href="https://www.digirocket.site/${page.slug}" />`
+    )
+    // Twitter title
+    .replace(
+      /<meta\s+name="twitter:title"\s+content="[^"]*"/,
+      `<meta name="twitter:title" content="${page.title}"`
+    )
+    // Twitter description
+    .replace(
+      /<meta\s+name="twitter:description"\s+content="[^"]*"/,
+      `<meta name="twitter:description" content="${page.description}"`
+    );
+}
+
 let created = 0;
+let withMetadata = 0;
+
 for (const slug of slugs) {
   const dir = path.join(distDir, slug);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
   
-  // Inject canonical and title into the static HTML
-  const html = indexHtml
-    .replace(
-      '<link rel="canonical" href="https://www.digirocket.site/" />',
+  // Find page metadata
+  const pageMeta = pageMetadata[slug];
+  
+  // Inject custom metadata if available
+  let html = indexHtml;
+  if (pageMeta) {
+    html = injectMetadata(html, pageMeta);
+    withMetadata++;
+  } else {
+    // Fallback: just update canonical
+    html = html.replace(
+      /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/,
       `<link rel="canonical" href="https://www.digirocket.site/${slug}" />`
     );
+  }
   
   fs.writeFileSync(path.join(dir, 'index.html'), html);
   created++;
 }
 
 console.log(`✅ Prerendered ${created} pages`);
+console.log(`📊 Com metadados únicos: ${withMetadata}/${created}`);
+
+

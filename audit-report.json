@@ -1,0 +1,327 @@
+{
+  "timestamp": "2026-06-26T16:48:02.624Z",
+  "summary": {
+    "sitemapUrls": 402,
+    "prerenderredPages": 388,
+    "pagesAnalyzed": 50,
+    "totalIssues": 103,
+    "qualityScore": -106
+  },
+  "issues": {
+    "missingFromPrerender": 0,
+    "missingFromSitemap": 0,
+    "duplicateTitles": 1,
+    "duplicateDescriptions": 1,
+    "duplicateH1s": 1,
+    "thinContent": 50,
+    "missingCanonical": 0,
+    "exaggeratedClaims": 50,
+    "placeholders": 0
+  },
+  "details": {
+    "missingFromPrerender": [],
+    "missingFromSitemap": [],
+    "duplicateTitlesExamples": [
+      [
+        "DigiRocket | Criação de Sites em Porto Alegre e Brasil · #1 no Google",
+        [
+          "criar-site",
+          "criar-site-aracaju",
+          "criar-site-belem",
+          "criar-site-belo-horizonte",
+          "criar-site-brasilia",
+          "criar-site-campinas",
+          "criar-site-campo-grande",
+          "criar-site-canoas",
+          "criar-site-caxias-do-sul",
+          "criar-site-cuiaba",
+          "criar-site-curitiba",
+          "criar-site-florianopolis",
+          "criar-site-fortaleza",
+          "criar-site-goiania",
+          "criar-site-gravatai",
+          "criar-site-guarulhos",
+          "criar-site-joao-pessoa",
+          "criar-site-joinville",
+          "criar-site-londrina",
+          "criar-site-maceio",
+          "criar-site-manaus",
+          "criar-site-maringa",
+          "criar-site-natal",
+          "criar-site-niteroi",
+          "criar-site-novo-hamburgo",
+          "criar-site-palmas",
+          "criar-site-pelotas",
+          "criar-site-porto-alegre",
+          "criar-site-porto-velho",
+          "criar-site-profissional",
+          "criar-site-recife",
+          "criar-site-rio-de-janeiro",
+          "criar-site-salvador",
+          "criar-site-santa-maria",
+          "criar-site-sao-bernardo-do-campo",
+          "criar-site-sao-luis",
+          "criar-site-sao-paulo",
+          "criar-site-teresina",
+          "criar-site-vitoria",
+          "/",
+          "site-academia-belem",
+          "site-academia-belo-horizonte",
+          "site-academia-brasilia",
+          "site-academia-campinas",
+          "site-academia-curitiba",
+          "site-academia-fortaleza",
+          "site-academia-goiania",
+          "site-academia-guarulhos",
+          "site-academia-manaus",
+          "site-academia-porto-alegre"
+        ]
+      ]
+    ],
+    "thinContentExamples": [
+      {
+        "slug": "criar-site",
+        "chars": 392
+      },
+      {
+        "slug": "criar-site-aracaju",
+        "chars": 392
+      },
+      {
+        "slug": "criar-site-belem",
+        "chars": 392
+      },
+      {
+        "slug": "criar-site-belo-horizonte",
+        "chars": 392
+      },
+      {
+        "slug": "criar-site-brasilia",
+        "chars": 392
+      },
+      {
+        "slug": "criar-site-campinas",
+        "chars": 392
+      },
+      {
+        "slug": "criar-site-campo-grande",
+        "chars": 392
+      },
+      {
+        "slug": "criar-site-canoas",
+        "chars": 392
+      },
+      {
+        "slug": "criar-site-caxias-do-sul",
+        "chars": 392
+      },
+      {
+        "slug": "criar-site-cuiaba",
+        "chars": 392
+      }
+    ],
+    "exaggeratedClaims": [
+      {
+        "slug": "criar-site",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-aracaju",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-belem",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-belo-horizonte",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-brasilia",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-campinas",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-campo-grande",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-canoas",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-caxias-do-sul",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-cuiaba",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-curitiba",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-florianopolis",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-fortaleza",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-goiania",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-gravatai",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-guarulhos",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-joao-pessoa",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-joinville",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-londrina",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-maceio",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-manaus",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-maringa",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-natal",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-niteroi",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-novo-hamburgo",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-palmas",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-pelotas",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-porto-alegre",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-porto-velho",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-profissional",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-recife",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-rio-de-janeiro",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-salvador",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-santa-maria",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-sao-bernardo-do-campo",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-sao-luis",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-sao-paulo",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-teresina",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "criar-site-vitoria",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "/",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "site-academia-belem",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "site-academia-belo-horizonte",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "site-academia-brasilia",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "site-academia-campinas",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "site-academia-curitiba",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "site-academia-fortaleza",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "site-academia-goiania",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "site-academia-guarulhos",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "site-academia-manaus",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      },
+      {
+        "slug": "site-academia-porto-alegre",
+        "pattern": "#1\\s+(no|do)\\s+Google"
+      }
+    ],
+    "placeholders": []
+  }
+}

@@ -84,6 +84,47 @@ export const SeoPageView: React.FC<Props> = ({ page, onBack }) => {
   const img = imageFor(page.slug);
   const waMsg = waSend(`Oi! Vim da página "${page.h1}" e quero saber mais sobre meu site.`);
 
+  // Update document metadata (for client-side navigation and prerender)
+  React.useEffect(() => {
+    document.title = page.title;
+    
+    const setMeta = (name: string, content: string) => {
+      let meta = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement;
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.name = name;
+        document.head.appendChild(meta);
+      }
+      meta.content = content;
+    };
+    
+    const setProperty = (property: string, content: string) => {
+      let meta = document.querySelector(`meta[property="${property}"]`) as HTMLMetaElement;
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute('property', property);
+        document.head.appendChild(meta);
+      }
+      meta.content = content;
+    };
+    
+    const setCanonical = (href: string) => {
+      let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
+      if (!link) {
+        link = document.createElement('link');
+        link.rel = 'canonical';
+        document.head.appendChild(link);
+      }
+      link.href = href;
+    };
+    
+    setMeta('description', page.description);
+    setProperty('og:title', page.title);
+    setProperty('og:description', page.description);
+    setProperty('og:url', `https://www.digirocket.site/${page.slug}`);
+    setCanonical(`https://www.digirocket.site/${page.slug}`);
+  }, [page]);
+
   return (
     <div className="min-h-screen text-white" style={{ background: '#020617' }}>
       {/* Schema */}
