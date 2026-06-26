@@ -1918,5 +1918,407 @@
     "description": "Site profissional para Engenharia em São Luís/MA. Pronto em 48h, R$497. Seu cliente acha você no Google. Estrutura pensada para SEO local.",
     "h1": "Site para Engenharia em São Luís",
     "slug": "site-engenharia-sao-luis"
+  },
+  "criar-site-porto-alegre": {
+    "title": "Criar Site em Porto Alegre em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Porto Alegre/RS. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o RS.",
+    "h1": "Criar Site em Porto Alegre",
+    "slug": "criar-site-porto-alegre"
+  },
+  "criar-site-sao-paulo": {
+    "title": "Criar Site em São Paulo em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em São Paulo/SP. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o SP.",
+    "h1": "Criar Site em São Paulo",
+    "slug": "criar-site-sao-paulo"
+  },
+  "criar-site-rio-de-janeiro": {
+    "title": "Criar Site em Rio de Janeiro em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Rio de Janeiro/RJ. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o RJ.",
+    "h1": "Criar Site em Rio de Janeiro",
+    "slug": "criar-site-rio-de-janeiro"
+  },
+  "criar-site-belo-horizonte": {
+    "title": "Criar Site em Belo Horizonte em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Belo Horizonte/MG. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o MG.",
+    "h1": "Criar Site em Belo Horizonte",
+    "slug": "criar-site-belo-horizonte"
+  },
+  "criar-site-curitiba": {
+    "title": "Criar Site em Curitiba em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Curitiba/PR. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o PR.",
+    "h1": "Criar Site em Curitiba",
+    "slug": "criar-site-curitiba"
+  },
+  "criar-site-florianopolis": {
+    "title": "Criar Site em Florianópolis em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Florianópolis/SC. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o SC.",
+    "h1": "Criar Site em Florianópolis",
+    "slug": "criar-site-florianopolis"
+  },
+  "criar-site-brasilia": {
+    "title": "Criar Site em Brasília em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Brasília/DF. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o DF.",
+    "h1": "Criar Site em Brasília",
+    "slug": "criar-site-brasilia"
+  },
+  "criar-site-goiania": {
+    "title": "Criar Site em Goiânia em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Goiânia/GO. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o GO.",
+    "h1": "Criar Site em Goiânia",
+    "slug": "criar-site-goiania"
+  },
+  "criar-site-salvador": {
+    "title": "Criar Site em Salvador em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Salvador/BA. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o BA.",
+    "h1": "Criar Site em Salvador",
+    "slug": "criar-site-salvador"
+  },
+  "criar-site-fortaleza": {
+    "title": "Criar Site em Fortaleza em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Fortaleza/CE. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o CE.",
+    "h1": "Criar Site em Fortaleza",
+    "slug": "criar-site-fortaleza"
+  },
+  "criar-site-recife": {
+    "title": "Criar Site em Recife em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Recife/PE. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o PE.",
+    "h1": "Criar Site em Recife",
+    "slug": "criar-site-recife"
+  },
+  "criar-site-manaus": {
+    "title": "Criar Site em Manaus em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Manaus/AM. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o AM.",
+    "h1": "Criar Site em Manaus",
+    "slug": "criar-site-manaus"
+  },
+  "criar-site-belem": {
+    "title": "Criar Site em Belém em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Belém/PA. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o PA.",
+    "h1": "Criar Site em Belém",
+    "slug": "criar-site-belem"
+  },
+  "criar-site-campinas": {
+    "title": "Criar Site em Campinas em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Campinas/SP. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o SP.",
+    "h1": "Criar Site em Campinas",
+    "slug": "criar-site-campinas"
+  },
+  "criar-site-joinville": {
+    "title": "Criar Site em Joinville em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Joinville/SC. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o SC.",
+    "h1": "Criar Site em Joinville",
+    "slug": "criar-site-joinville"
+  },
+  "criar-site-natal": {
+    "title": "Criar Site em Natal em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Natal/RN. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o RN.",
+    "h1": "Criar Site em Natal",
+    "slug": "criar-site-natal"
+  },
+  "criar-site-caxias-do-sul": {
+    "title": "Criar Site em Caxias do Sul em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Caxias do Sul/RS. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o RS.",
+    "h1": "Criar Site em Caxias do Sul",
+    "slug": "criar-site-caxias-do-sul"
+  },
+  "criar-site-londrina": {
+    "title": "Criar Site em Londrina em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Londrina/PR. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o PR.",
+    "h1": "Criar Site em Londrina",
+    "slug": "criar-site-londrina"
+  },
+  "criar-site-vitoria": {
+    "title": "Criar Site em Vitória em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Vitória/ES. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o ES.",
+    "h1": "Criar Site em Vitória",
+    "slug": "criar-site-vitoria"
+  },
+  "criar-site-canoas": {
+    "title": "Criar Site em Canoas em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Canoas/RS. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o RS.",
+    "h1": "Criar Site em Canoas",
+    "slug": "criar-site-canoas"
+  },
+  "criar-site-gravatai": {
+    "title": "Criar Site em Gravataí em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Gravataí/RS. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o RS.",
+    "h1": "Criar Site em Gravataí",
+    "slug": "criar-site-gravatai"
+  },
+  "criar-site-novo-hamburgo": {
+    "title": "Criar Site em Novo Hamburgo em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Novo Hamburgo/RS. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o RS.",
+    "h1": "Criar Site em Novo Hamburgo",
+    "slug": "criar-site-novo-hamburgo"
+  },
+  "criar-site-pelotas": {
+    "title": "Criar Site em Pelotas em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Pelotas/RS. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o RS.",
+    "h1": "Criar Site em Pelotas",
+    "slug": "criar-site-pelotas"
+  },
+  "criar-site-santa-maria": {
+    "title": "Criar Site em Santa Maria em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Santa Maria/RS. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o RS.",
+    "h1": "Criar Site em Santa Maria",
+    "slug": "criar-site-santa-maria"
+  },
+  "criar-site-guarulhos": {
+    "title": "Criar Site em Guarulhos em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Guarulhos/SP. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o SP.",
+    "h1": "Criar Site em Guarulhos",
+    "slug": "criar-site-guarulhos"
+  },
+  "criar-site-sao-bernardo-do-campo": {
+    "title": "Criar Site em São Bernardo do Campo em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em São Bernardo do Campo/SP. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o SP.",
+    "h1": "Criar Site em São Bernardo do Campo",
+    "slug": "criar-site-sao-bernardo-do-campo"
+  },
+  "criar-site-niteroi": {
+    "title": "Criar Site em Niterói em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Niterói/RJ. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o RJ.",
+    "h1": "Criar Site em Niterói",
+    "slug": "criar-site-niteroi"
+  },
+  "criar-site-maringa": {
+    "title": "Criar Site em Maringá em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Maringá/PR. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o PR.",
+    "h1": "Criar Site em Maringá",
+    "slug": "criar-site-maringa"
+  },
+  "criar-site-joao-pessoa": {
+    "title": "Criar Site em João Pessoa em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em João Pessoa/PB. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o PB.",
+    "h1": "Criar Site em João Pessoa",
+    "slug": "criar-site-joao-pessoa"
+  },
+  "criar-site-maceio": {
+    "title": "Criar Site em Maceió em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Maceió/AL. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o AL.",
+    "h1": "Criar Site em Maceió",
+    "slug": "criar-site-maceio"
+  },
+  "criar-site-teresina": {
+    "title": "Criar Site em Teresina em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Teresina/PI. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o PI.",
+    "h1": "Criar Site em Teresina",
+    "slug": "criar-site-teresina"
+  },
+  "criar-site-sao-luis": {
+    "title": "Criar Site em São Luís em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em São Luís/MA. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o MA.",
+    "h1": "Criar Site em São Luís",
+    "slug": "criar-site-sao-luis"
+  },
+  "criar-site-cuiaba": {
+    "title": "Criar Site em Cuiabá em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Cuiabá/MT. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o MT.",
+    "h1": "Criar Site em Cuiabá",
+    "slug": "criar-site-cuiaba"
+  },
+  "criar-site-campo-grande": {
+    "title": "Criar Site em Campo Grande em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Campo Grande/MS. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o MS.",
+    "h1": "Criar Site em Campo Grande",
+    "slug": "criar-site-campo-grande"
+  },
+  "criar-site-aracaju": {
+    "title": "Criar Site em Aracaju em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Aracaju/SE. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o SE.",
+    "h1": "Criar Site em Aracaju",
+    "slug": "criar-site-aracaju"
+  },
+  "criar-site-palmas": {
+    "title": "Criar Site em Palmas em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Palmas/TO. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o TO.",
+    "h1": "Criar Site em Palmas",
+    "slug": "criar-site-palmas"
+  },
+  "criar-site-porto-velho": {
+    "title": "Criar Site em Porto Velho em 48h | DigiRocket — R$497",
+    "description": "Criação de site profissional em Porto Velho/RO. Pronto em 48h, R$497. Estrutura pensada para SEO local e captação via WhatsApp. Atendemos todo o RO.",
+    "h1": "Criar Site em Porto Velho",
+    "slug": "criar-site-porto-velho"
+  },
+  "site-para-salao-de-beleza": {
+    "title": "Site para Salão de Beleza | DigiRocket — R$497",
+    "description": "Site profissional para Salão de Beleza. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Salão de Beleza",
+    "slug": "site-para-salao-de-beleza"
+  },
+  "site-para-spa": {
+    "title": "Site para Spa | DigiRocket — R$497",
+    "description": "Site profissional para Spa. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Spa",
+    "slug": "site-para-spa"
+  },
+  "site-para-medico": {
+    "title": "Site para Médico | DigiRocket — R$497",
+    "description": "Site profissional para Médico. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Médico",
+    "slug": "site-para-medico"
+  },
+  "site-para-psicologo": {
+    "title": "Site para Psicólogo | DigiRocket — R$497",
+    "description": "Site profissional para Psicólogo. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Psicólogo",
+    "slug": "site-para-psicologo"
+  },
+  "site-para-fisioterapeuta": {
+    "title": "Site para Fisioterapeuta | DigiRocket — R$497",
+    "description": "Site profissional para Fisioterapeuta. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Fisioterapeuta",
+    "slug": "site-para-fisioterapeuta"
+  },
+  "site-para-nutricionista": {
+    "title": "Site para Nutricionista | DigiRocket — R$497",
+    "description": "Site profissional para Nutricionista. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Nutricionista",
+    "slug": "site-para-nutricionista"
+  },
+  "site-para-consultor": {
+    "title": "Site para Consultor | DigiRocket — R$497",
+    "description": "Site profissional para Consultor. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Consultor",
+    "slug": "site-para-consultor"
+  },
+  "site-para-arquiteto": {
+    "title": "Site para Arquiteto | DigiRocket — R$497",
+    "description": "Site profissional para Arquiteto. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Arquiteto",
+    "slug": "site-para-arquiteto"
+  },
+  "site-para-engenheiro": {
+    "title": "Site para Engenheiro | DigiRocket — R$497",
+    "description": "Site profissional para Engenheiro. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Engenheiro",
+    "slug": "site-para-engenheiro"
+  },
+  "site-para-imobiliaria": {
+    "title": "Site para Imobiliária | DigiRocket — R$497",
+    "description": "Site profissional para Imobiliária. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Imobiliária",
+    "slug": "site-para-imobiliaria"
+  },
+  "site-para-construtora": {
+    "title": "Site para Construtora | DigiRocket — R$497",
+    "description": "Site profissional para Construtora. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Construtora",
+    "slug": "site-para-construtora"
+  },
+  "site-para-energia-solar": {
+    "title": "Site para Energia Solar | DigiRocket — R$497",
+    "description": "Site profissional para Energia Solar. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Energia Solar",
+    "slug": "site-para-energia-solar"
+  },
+  "site-para-personal-trainer": {
+    "title": "Site para Personal Trainer | DigiRocket — R$497",
+    "description": "Site profissional para Personal Trainer. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Personal Trainer",
+    "slug": "site-para-personal-trainer"
+  },
+  "site-para-veterinaria": {
+    "title": "Site para Veterinária | DigiRocket — R$497",
+    "description": "Site profissional para Veterinária. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Veterinária",
+    "slug": "site-para-veterinaria"
+  },
+  "site-para-oficina": {
+    "title": "Site para Oficina | DigiRocket — R$497",
+    "description": "Site profissional para Oficina. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Oficina",
+    "slug": "site-para-oficina"
+  },
+  "site-para-mecanica": {
+    "title": "Site para Mecânica | DigiRocket — R$497",
+    "description": "Site profissional para Mecânica. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Mecânica",
+    "slug": "site-para-mecanica"
+  },
+  "site-para-eletricista": {
+    "title": "Site para Eletricista | DigiRocket — R$497",
+    "description": "Site profissional para Eletricista. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Eletricista",
+    "slug": "site-para-eletricista"
+  },
+  "site-para-sushi": {
+    "title": "Site para Sushi | DigiRocket — R$497",
+    "description": "Site profissional para Sushi. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Sushi",
+    "slug": "site-para-sushi"
+  },
+  "site-para-doceria": {
+    "title": "Site para Doceria | DigiRocket — R$497",
+    "description": "Site profissional para Doceria. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Doceria",
+    "slug": "site-para-doceria"
+  },
+  "site-para-acaiteria": {
+    "title": "Site para Açaiteria | DigiRocket — R$497",
+    "description": "Site profissional para Açaiteria. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Açaiteria",
+    "slug": "site-para-acaiteria"
+  },
+  "site-para-loja-de-roupas": {
+    "title": "Site para Loja de Roupas | DigiRocket — R$497",
+    "description": "Site profissional para Loja de Roupas. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Loja de Roupas",
+    "slug": "site-para-loja-de-roupas"
+  },
+  "site-para-loja-online": {
+    "title": "Site para Loja Online | DigiRocket — R$497",
+    "description": "Site profissional para Loja Online. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Loja Online",
+    "slug": "site-para-loja-online"
+  },
+  "site-para-ecommerce": {
+    "title": "Site para E-commerce | DigiRocket — R$497",
+    "description": "Site profissional para E-commerce. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para E-commerce",
+    "slug": "site-para-ecommerce"
+  },
+  "site-para-curso-online": {
+    "title": "Site para Curso Online | DigiRocket — R$497",
+    "description": "Site profissional para Curso Online. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Curso Online",
+    "slug": "site-para-curso-online"
+  },
+  "site-para-escola": {
+    "title": "Site para Escola | DigiRocket — R$497",
+    "description": "Site profissional para Escola. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Escola",
+    "slug": "site-para-escola"
+  },
+  "site-para-fotografo": {
+    "title": "Site para Fotógrafo | DigiRocket — R$497",
+    "description": "Site profissional para Fotógrafo. Pronto em 48h, R$497. Estrutura pensada para captação via WhatsApp e ranking orgânico no Google.",
+    "h1": "Site Profissional para Fotógrafo",
+    "slug": "site-para-fotografo"
+  },
+  "criar-site": {
+    "slug": "criar-site",
+    "title": "Criar Site Profissional em 48h | DigiRocket — R$497",
+    "description": "Criação de sites profissionais em 48h. Estrutura pensada para SEO local e captação via WhatsApp. A partir de R$497. Atendemos todo o Brasil.",
+    "h1": "Criar Site Profissional"
+  },
+  "criar-site-profissional": {
+    "slug": "criar-site-profissional",
+    "title": "Criação de Site Profissional | DigiRocket — R$497",
+    "description": "Sites profissionais com foco em conversão. Pronto em 48h, R$497. Estrutura pensada para aparecer no Google e captar leads via WhatsApp.",
+    "h1": "Criação de Site Profissional"
+  },
+  "site-em-48h": {
+    "slug": "site-em-48h",
+    "title": "Site em 48 Horas | DigiRocket — R$497",
+    "description": "Site profissional entregue em 48 horas. A partir de R$497. Estrutura pensada para SEO local e conversão via WhatsApp. Garantia de 7 dias.",
+    "h1": "Site em 48 Horas"
+  },
+  "sobre-a-digirocket": {
+    "slug": "sobre-a-digirocket",
+    "title": "Sobre a DigiRocket | Criação de Sites em 48h",
+    "description": "DigiRocket: sites profissionais em 48h. Estrutura pensada para SEO local e captação via WhatsApp. Porto Alegre/RS. Atendemos todo o Brasil.",
+    "h1": "Sobre a DigiRocket"
   }
 }
