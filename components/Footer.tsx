@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
           </p>
           <div className="flex gap-4">
             {[
-              { icon: Instagram, link: 'https://instagram.com/godigirocket' },
+              { icon: Instagram, link: 'https://www.instagram.com/ojuangoes' },
               { icon: MessageCircle, link: 'https://wa.me/5551984689725' },
               { icon: Mail, link: 'mailto:contato@digirocket.site' }
             ].map((social, i) => (

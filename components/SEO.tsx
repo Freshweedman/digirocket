@@ -41,7 +41,7 @@ export const SEO: React.FC<SEOProps> = ({
         description: description,
         sameAs: [
           'https://www.facebook.com/digirocket',
-          'https://www.instagram.com/digirocket',
+          'https://www.instagram.com/ojuangoes',
           'https://www.linkedin.com/company/digirocket',
           'https://www.youtube.com/@digirocket',
           'https://twitter.com/digirocket'
